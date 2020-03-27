@@ -1,0 +1,23 @@
+{
+  "name": "@addapptables/core",
+  "version": "0.0.1",
+  "author": "Craftsjs",
+  "description": "Craftsjs core library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/addapptables/angular-miscellaneous",
+  "peerDependencies": {
+    "@angular/common": ">= 9.0.0 < 10.0.0",
+    "@angular/core": ">= 9.0.0 < 10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/angular-miscellaneous"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/angular-miscellaneous/issues"
+  },
+  "keywords": [
+    "Craftsjs",
+    "core"
+  ]
+}

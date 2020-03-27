@@ -14,7 +14,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@craftsjs/card": [
+        "dist/craftsjs/card/craftsjs-card",
+        "dist/craftsjs/card"
+      ],
+      "@craftsjs/core": [
+        "dist/craftsjs/core/craftsjs-core",
+        "dist/craftsjs/core"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,0 +1,26 @@
+@mixin transition-opacity-transform($time, $type) {
+    -webkit-transition: opacity $time $type, transform $time $type;
+    -moz-transition: opacity $time $type, transform $time $type;
+    -o-transition: opacity $time $type, transform $time $type;
+    -ms-transition: opacity $time $type, transform $time $type;
+    transition: opacity $time $type, transform $time $type;
+}
+
+@mixin transform-translate-x($value){
+     -webkit-transform:  translate3d($value, 0, 0);
+    -moz-transform: translate3d($value, 0, 0);
+    -o-transform: translate3d($value, 0, 0);
+    -ms-transform: translate3d($value, 0, 0);
+    transform: translate3d($value, 0, 0);
+}
+
+@mixin transition(){
+    transition-property: top,bottom, width;
+    transition-duration: .2s,.2s, .35s;
+    transition-timing-function: linear,linear,ease;
+}
+
+@mixin opacity($value){
+    opacity: $value;
+    @include transform-translate-x(0);
+}

@@ -1,0 +1,11 @@
+@import './components/alert-info/alert-info.theme';
+@import './components/alert-sucess/alert-success.theme';
+@import './components/error/alert-error.theme';
+@import './components/warning/alert-warning.theme';
+
+@mixin craftsjs-alert($variables) {
+    @include alert-error($variables);
+    @include alert-warning($variables);
+    @include alert-info($variables);
+    @include alert-success($variables);
+}

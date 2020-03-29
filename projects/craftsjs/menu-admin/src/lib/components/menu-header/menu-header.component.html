@@ -1,0 +1,12 @@
+<div class="menu-title d-flex align-items-center">
+    <img *ngIf="header?.logoUrl" class="menu-tools-logo" [src]="header.logoUrl">
+    <span *ngIf="header?.companyName" [class]="!(collapse$ | async)? 'text-dots': 'text-dots menu-mini-hide'">{{header.companyName}}</span>
+</div>
+<div [class]="!(collapse$ | async)? 'menu-colapse': 'menu-mini-hide'">
+    <button class="d-none d-md-block" mat-icon-button (click)="colapseMenu()">
+        <mat-icon class="secondary-text">menu</mat-icon>
+    </button>
+    <button class="d-md-none" mat-icon-button (click)="closeMenu()">
+        <mat-icon class="secondary-text">arrow_back</mat-icon>
+    </button>
+</div>

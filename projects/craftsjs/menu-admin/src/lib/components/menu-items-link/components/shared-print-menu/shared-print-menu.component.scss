@@ -1,0 +1,24 @@
+.shared-print {
+    &-detail {
+        margin-left: 16px !important;
+        & > li {
+            display: flex !important;
+            border-left: 2px solid #fff !important;
+            border-radius: 0 !important;
+            padding-left: 13px !important;
+        }
+        &-li {
+            &:before {
+                content: '';
+                position: relative;
+                top: -18px;
+                left: -15px;
+                bottom: 50%;
+                width: .75em;
+                border: 2px solid #fff;
+                border-top: 0 transparent;
+                border-right: 0 transparent;
+            }
+        }
+    }
+}

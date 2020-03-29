@@ -1,0 +1,16 @@
+<button class="menu-children-multioption menu-group" *ngIf="menuGroup.multiOption" mat-button (click)="openAndClose()">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <i *ngIf="menuGroup.class" class="menu-items-button-icon {{menuGroup.class}}" matSuffix>{{menuGroup.value}}</i>
+            <span class="menu-children-text" *ngIf="!menuGroup.class">{{menuGroup.value}}</span>
+            <span [class]="!(collapse$ | async)? 'menu-items-title': 'menu-mini-items-title'">
+                {{menuGroup.title | translate}}
+            </span>
+        </div>
+        <div [class]="!(collapse$ | async)? 'd-flex': 'd-flex menu-mini-hide'">
+            <mat-icon *ngIf="!(isOpen$ | async)" matSuffix>arrow_drop_down</mat-icon>
+            <mat-icon *ngIf="isOpen$ | async" matSuffix>arrow_drop_up</mat-icon>
+        </div>
+    </div>
+</button>
+<ng-content></ng-content>

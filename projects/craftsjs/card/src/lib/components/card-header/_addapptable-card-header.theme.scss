@@ -1,0 +1,47 @@
+@mixin box_shadow_header_color($color) {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px $color
+}
+
+@mixin addapptable-card-header($variables) {
+    p{
+        margin: 0;
+    }
+    .card {
+        &-header {
+            justify-content: space-between;
+            &-subtitle {
+                text-align: end;
+                margin: 0.5em;
+                &-mark{
+                    color: #999;
+                    font-size: 1em;
+                    margin-bottom: 0.5em;
+                }
+            }
+            &-blue{
+                background-color: map-get($variables, color-blue);
+                @include box_shadow_header_color(map-get($variables, color-blue));
+            }
+            &-danger{
+                background-color: map-get($variables, color-danger);
+                @include box_shadow_header_color(map-get($variables, color-danger));
+            }
+            &-warning{
+                background-color: map-get($variables, color-warning);
+                @include box_shadow_header_color(map-get($variables, color-warning));
+            }
+            &-success{
+                background-color: map-get($variables, color-success);
+                @include box_shadow_header_color(map-get($variables, color-success));
+            }
+            &-info{
+                background-color: map-get($variables, color-info);
+                @include box_shadow_header_color(map-get($variables, color-info));
+            }
+            &-gray{
+                background-color: map-get($variables, gray-color);
+                @include box_shadow_header_color(map-get($variables, gray-color));
+            }
+        }
+    }
+}

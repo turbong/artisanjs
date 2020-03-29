@@ -1,0 +1,88 @@
+@import './components/card-header/addapptable-card-header.theme';
+
+@mixin addapptable-card($theme, $variables) {
+
+    $accent: map-get($theme, accent);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground);
+
+    //card
+    $card-padding: 12px 0;
+    $card-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+
+    //general
+    $card-margin: 5px;
+
+    //header
+    $card-header-margin: -20px 15px 0 16px;
+    $card-header-padding: 20px;
+    $card-title-font-weight: 500;
+    $card-header-box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px mat-color($accent);
+    $card-header-icon-margin-right: 10px;
+    $background-color-header: mat-color($accent);
+
+    // body
+    $card-body-padding: 12px 20px 20px;
+
+    //footer
+    $card-footer-margin: 0 20px 10px;
+    $card-padding-top: 10px;
+
+
+    .card {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin: $card-padding;
+        box-shadow: $card-box-shadow;
+        background: mat-color($background, card);
+        margin-top: 32px;
+        &-header {
+            &-oval {
+                background-color: $background-color-header;
+                color: map-get($variables, text);;
+                padding: 20px 15px;
+                margin: $card-header-margin;
+                border-radius: map-get($variables, border-radius);
+                display: inline-block;
+                box-shadow: $card-header-box-shadow;
+            }
+            &-linear {
+                display: inline-block;
+                padding: 1.3em 0.4em 1.3em 0.4em;
+            }
+            &-title {
+                align-items: center;
+                display: flex;
+                padding: 0px 18px;
+                font-weight: $card-title-font-weight;
+                &> * {
+                    vertical-align: top;
+                    margin-right: 5px;
+                }
+                &>:last-child{
+                    margin: inherit;
+                }
+            }
+        }
+        &-body {
+            display: block;
+            padding: $card-body-padding;
+            position: relative;
+        }
+        &-footer {
+            margin: $card-footer-margin;
+            padding-top: $card-padding-top;
+            border-top: 1px solid mat-color($foreground, divider);
+        }
+        &-divider {
+            display: block;
+            margin: 0;
+            border-top-width: 1px;
+            border-top-style: dashed;
+            margin-top: 10px;
+            color: #cac8c8;
+        }
+    }
+    @include addapptable-card-header($variables);
+}

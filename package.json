@@ -8,28 +8,29 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-styles": "scss-bundle -e ./projects/addapptables/card/src/lib/_addapptable-card.theme.scss -d ./dist/addapptables/card/_addapptables-card.theme.scss"
+    "build-styles": "scss-bundle -e ./projects/craftsjs/card/src/lib/_addapptable-card.theme.scss -o ./dist/craftsjs/card/_addapptables-card.theme.scss"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.7",
     "@angular/cdk": "^9.2.0",
     "@angular/common": "~9.0.7",
-    "@angular/compiler": "~9.0.7",
+    "@angular/compiler": "9.1.0",
     "@angular/core": "~9.0.7",
     "@angular/forms": "~9.0.7",
     "@angular/platform-browser": "~9.0.7",
     "@angular/platform-browser-dynamic": "~9.0.7",
     "@angular/router": "~9.0.7",
     "rxjs": "~6.5.4",
+    "scss-bundle": "^3.1.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",
     "@angular-devkit/build-ng-packagr": "~0.900.7",
-    "@angular/cli": "~9.0.7",
-    "@angular/compiler-cli": "~9.0.7",
+    "@angular/cli": "9.1.0",
+    "@angular/compiler-cli": "9.1.0",
     "@angular/language-service": "~9.0.7",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",

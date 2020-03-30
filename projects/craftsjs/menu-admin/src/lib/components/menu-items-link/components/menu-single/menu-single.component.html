@@ -1,0 +1,9 @@
+<button class="menu-single" *ngIf="menu" mat-button>
+    <div class="d-flex flex-row align-items-center">
+        <i *ngIf="menu.class" class="menu-items-button-icon {{menu.class}}" matSuffix>{{menu.value}}</i>
+        <span class="menu-children-text" *ngIf="!menu.class">{{menu.value}}</span>
+        <span [class]="!(collapse$ | async)? 'menu-items-title': 'menu-mini-items-title'">
+            {{menu.title | translate}}
+        </span>
+    </div>
+</button>

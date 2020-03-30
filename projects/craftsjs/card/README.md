@@ -1,24 +1,111 @@
-# Card
+# ADDAPPTABLES card
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Craftsjs card is a library for angular
 
-## Code scaffolding
+[See demo](http://addapptables.com/admin/components/cards)
 
-Run `ng generate component component-name --project card` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project card`.
-> Note: Don't forget to add `--project card` or else it will be added to the default project in your `angular.json` file. 
+[Example code](https://stackblitz.com/edit/angular-card-addapptables)
 
-## Build
+## Getting Started
+To get started, let's install the package through npm:
 
-Run `ng build card` to build the project. The build artifacts will be stored in the `dist/` directory.
+Choose the version corresponding to your Angular version:
 
-## Publishing
+ Angular     | @craftsjs/card
+ ----------- | -------------------
+ 9           | 1.x
 
-After building your library with `ng build card`, go to the dist folder `cd dist/card` and run `npm publish`.
+```
+npm i @craftsjs/card --S
+```
 
-## Running unit tests
+Install peer dependencies
 
-Run `ng test card` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+npm i
+@craftsjs/core
+@angular/material
+@angular/animations
+@angular/cdk --S
+```
 
-## Further help
+## How to use
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Import the module CardModule
+
+```typescript
+import { CardModule } from '@craftsjs/card';
+@NgModule({
+  imports: [CardModule]
+})
+export class YourModule { }
+```
+
+simple card
+```html
+<card>
+  <card-header>
+    <card-header-linear>
+      <card-title>
+        <mat-icon matSuffix>horizontal_split</mat-icon>
+        <span>Simple card</span>
+      </card-title>
+    </card-header-linear>
+  </card-header>
+  <mat-divider></mat-divider>
+  <card-body>
+    // custom component
+  </card-body>
+</card>
+```
+
+Oval card
+```html
+<card>
+  <card-header>
+    <card-header-oval>
+      <card-title>
+        <mat-icon matSuffix>horizontal_split</mat-icon>
+        <span>Oval card</span>
+      </card-title>
+    </card-header-oval>
+  </card-header>
+  <card-body>
+    // custom component
+  </card-body>
+</card>
+```
+
+- Finally, it is important to import the styles to the application
+
+```scss
+@import '~@craftsjs/core/craftsjs-grid.theme';
+@import '~@angular/material/theming';
+@import '~@craftsjs/card/craftsjs-card.theme';
+
+$craftsjs-app-primary: mat-palette($mat-teal, 800);
+$craftsjs-app-accent:  mat-palette($mat-pink, 800, A100, 100);
+$craftsjs-app-warn: mat-palette($mat-red);
+$craftsjs-app-theme: mat-light-theme($craftsjs-app-primary, $craftsjs-app-accent, $craftsjs-app-warn);
+$craftsjs-theme-variables: (
+    text: white,
+    border-radius: 5px,
+    color-blue: #20a9d2,
+    color-success: #5cb85c,
+    color-info: #5bc0de,
+    color-warning: #e09d3d,
+    color-danger: #d43934,
+    gray-color: #696868
+);
+@include mat-core();
+body.theme-default {
+    @include angular-material-theme($craftsjs-app-theme);
+    @include card($craftsjs-app-theme, $craftsjs-theme-variables);
+}
+```
+
+- Do not forget to put the theme-default class in the html body
+
+```html
+<body class="theme-default"></body>
+```

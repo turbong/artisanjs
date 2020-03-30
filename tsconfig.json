@@ -23,6 +23,30 @@
       "@craftsjs/core": [
         "dist/craftsjs/core/craftsjs-core",
         "dist/craftsjs/core"
+      ],
+      "@craftsjs/alert": [
+        "dist/craftsjs/alert/craftsjs-alert",
+        "dist/craftsjs/alert"
+      ],
+      "@craftsjs/menu-admin": [
+        "dist/craftsjs/menu-admin/craftsjs-menu-admin",
+        "dist/craftsjs/menu-admin"
+      ],
+      "@craftsjs/modal": [
+        "dist/craftsjs/modal/craftsjs-modal",
+        "dist/craftsjs/modal"
+      ],
+      "@craftsjs/perfect-scrollbar": [
+        "dist/craftsjs/perfect-scrollbar/craftsjs-perfect-scrollbar",
+        "dist/craftsjs/perfect-scrollbar"
+      ],
+      "@craftsjs/ngrx-action": [
+        "dist/craftsjs/ngrx-action/craftsjs-ngrx-action",
+        "dist/craftsjs/ngrx-action"
+      ],
+      "@craftsjs/notifier": [
+        "dist/craftsjs/notifier/craftsjs-notifier",
+        "dist/craftsjs/notifier"
       ]
     }
   },

@@ -1,24 +1,22 @@
-# Core
+# ADDAPPTABLES core
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+[See demo](http://addapptables.com/admin/dashboard)
 
-## Code scaffolding
+## Getting Started
+To get started, lets install the package thru npm:
 
-Run `ng generate component component-name --project core` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project core`.
-> Note: Don't forget to add `--project core` or else it will be added to the default project in your `angular.json` file. 
+Choose the version corresponding to your Angular version:
 
-## Build
+ Angular     | @addapptables/core
+ ----------- | -------------------
+ 9           | 1.x
 
-Run `ng build core` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm i @crafsjs/core --S
+```
 
-## Publishing
+## How to use
 
-After building your library with `ng build core`, go to the dist folder `cd dist/core` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test core` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```scss
+@import '~@crafsjs/core/crafsjs-grid.theme';
+```

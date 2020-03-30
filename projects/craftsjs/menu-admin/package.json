@@ -1,0 +1,36 @@
+{
+  "name": "@craftsjs/menu-admin",
+  "version": "0.0.1",
+  "author": "craftsjs",
+  "description": "Material menu library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/addapptables/angular-miscellaneous",
+  "peerDependencies": {
+    "@angular/common": ">= 9.0.0 < 10.0.0",
+    "@angular/core": ">= 9.0.0 < 10.0.0",
+    "@angular/router": ">= 9.0.0 < 10.0.0",
+    "@angular/material": ">= 9.0.0 < 10.0.0",
+    "@angular/cdk": ">= 9.0.0 < 10.0.0",
+    "@ngx-translate/core": ">=11.0.0 < 12.0.0",
+    "@ngrx/store": ">= 9.0.0 < 10.0.0",
+    "@craftsjs/core": ">=1.0.0 < 2.0.0",
+    "@craftsjs/ngrx-action": ">=1.0.0 < 2.0.0",
+    "@craftsjs/perfect-scrollbar": ">=1.0.0 < 2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/angular-miscellaneous.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/angular-miscellaneous/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "menu",
+    "material",
+    "craftsjs-menu-ui",
+    "menu-ui",
+    "craftsjs"
+  ]
+}

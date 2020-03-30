@@ -2,8 +2,8 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
 
 
 @Component({
-  selector: 'craftsjs-card',
-  templateUrl: './addapptable-card.component.html',
+  selector: 'card',
+  templateUrl: './card.component.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'card' }

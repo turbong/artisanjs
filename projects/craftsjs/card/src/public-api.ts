@@ -1,5 +1,5 @@
-export * from './lib/addapptable-card.module';
-export * from './lib/addapptable-card.component';
+export * from './lib/card.module';
+export * from './lib/card.component';
 export * from './lib/components/card-header/card-header.component';
 export * from './lib/components/card-header/components/card-header-linear/card-header-linear.component';
 export * from './lib/components/card-header/components/card-header-oval/card-header-oval.component';

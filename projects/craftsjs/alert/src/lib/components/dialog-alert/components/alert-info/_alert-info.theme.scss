@@ -1,0 +1,29 @@
+@mixin alert-info($variables) {
+    .alert-icon-info {
+      display: block;
+      border-color: map-get($variables, color-info) ;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 29px;
+        left: 50%;
+        bottom: 17px;
+        border-radius: 2px;
+        margin-left: -2px;
+        background-color: map-get($variables, color-info);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: -3px;
+        top: 19px;
+        background-color: map-get($variables, color-info);
+        left: 50%;
+      }
+    }
+}

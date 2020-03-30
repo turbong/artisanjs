@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'craftsjs-card-header-linear',
+  selector: 'card-header-linear',
   templateUrl: './card-header-linear.component.html',
   styleUrls: ['./card-header-linear.component.scss'],
   host: {

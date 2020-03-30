@@ -1,0 +1,12 @@
+<h3 *ngIf="user?.initialName && (collapse$ | async)" class="menu-mini-user-initials">
+    {{user.initialName}}
+</h3>
+<h3 *ngIf="user?.fullName" [class]="!(collapse$ | async)? 'menu-user-title' : 'menu-mini-hide'">
+    <span [matTooltip]="user.fullName" class="user-text-dots" matTooltipPosition="above">{{user.fullName}}</span>
+</h3>
+<h5 *ngIf="user?.email" [class]="!(collapse$ | async)? 'menu-user-subtitle' : 'menu-mini-hide'">
+    <span [matTooltip]="user.email" class="user-text-dots" matTooltipPosition="above">{{user.email}}</span>
+</h5>
+<div *ngIf="user?.avatarUrl" class="menu-user-avatar">
+    <img [class]="!(collapse$ | async)? 'user-avatar menu-user-avatar-img': 'user-avatar menu-mini-user-avatar'" [src]="user.avatarUrl">
+</div>

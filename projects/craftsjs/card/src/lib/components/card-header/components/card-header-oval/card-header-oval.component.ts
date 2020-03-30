@@ -10,7 +10,7 @@ export const _CardHeaderOvalMixinBase:
   mixinColor(CardHeaderOvalBase);
 
 @Component({
-  selector: 'craftsjs-card-header-oval',
+  selector: 'card-header-oval',
   templateUrl: './card-header-oval.component.html',
   styleUrls: ['./card-header-oval.component.scss'],
   host: {

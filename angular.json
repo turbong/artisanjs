@@ -82,7 +82,248 @@
           }
         }
       }
-    }},
+    },
+    "@craftsjs/alert": {
+      "projectType": "library",
+      "root": "projects/craftsjs/alert",
+      "sourceRoot": "projects/craftsjs/alert/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/alert/tsconfig.lib.json",
+            "project": "projects/craftsjs/alert/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/alert/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/alert/src/test.ts",
+            "tsConfig": "projects/craftsjs/alert/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/alert/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/alert/tsconfig.lib.json",
+              "projects/craftsjs/alert/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/menu-admin": {
+      "projectType": "library",
+      "root": "projects/craftsjs/menu-admin",
+      "sourceRoot": "projects/craftsjs/menu-admin/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/menu-admin/tsconfig.lib.json",
+            "project": "projects/craftsjs/menu-admin/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/menu-admin/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/menu-admin/src/test.ts",
+            "tsConfig": "projects/craftsjs/menu-admin/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/menu-admin/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/menu-admin/tsconfig.lib.json",
+              "projects/craftsjs/menu-admin/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/modal": {
+      "projectType": "library",
+      "root": "projects/craftsjs/modal",
+      "sourceRoot": "projects/craftsjs/modal/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/modal/tsconfig.lib.json",
+            "project": "projects/craftsjs/modal/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/modal/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/modal/src/test.ts",
+            "tsConfig": "projects/craftsjs/modal/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/modal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/modal/tsconfig.lib.json",
+              "projects/craftsjs/modal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/perfect-scrollbar": {
+      "projectType": "library",
+      "root": "projects/craftsjs/perfect-scrollbar",
+      "sourceRoot": "projects/craftsjs/perfect-scrollbar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
+            "project": "projects/craftsjs/perfect-scrollbar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/perfect-scrollbar/src/test.ts",
+            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/perfect-scrollbar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
+              "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/ngrx-action": {
+      "projectType": "library",
+      "root": "projects/craftsjs/ngrx-action",
+      "sourceRoot": "projects/craftsjs/ngrx-action/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.json",
+            "project": "projects/craftsjs/ngrx-action/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/ngrx-action/src/test.ts",
+            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/ngrx-action/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/ngrx-action/tsconfig.lib.json",
+              "projects/craftsjs/ngrx-action/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/notifier": {
+      "projectType": "library",
+      "root": "projects/craftsjs/notifier",
+      "sourceRoot": "projects/craftsjs/notifier/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/notifier/tsconfig.lib.json",
+            "project": "projects/craftsjs/notifier/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/notifier/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/notifier/src/test.ts",
+            "tsConfig": "projects/craftsjs/notifier/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/notifier/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/notifier/tsconfig.lib.json",
+              "projects/craftsjs/notifier/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "analytics": false
   },

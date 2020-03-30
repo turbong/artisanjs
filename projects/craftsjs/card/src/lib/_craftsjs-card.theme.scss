@@ -1,6 +1,6 @@
-@import './components/card-header/addapptable-card-header.theme';
+@import './components/card-header/craftsjs-card-header.theme';
 
-@mixin addapptable-card($theme, $variables) {
+@mixin card($theme, $variables) {
 
     $accent: map-get($theme, accent);
     $background: map-get($theme, background);

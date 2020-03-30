@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CardComponent } from './addapptable-card.component';
+import { CommonModule } from '@angular/common';
+import { CardComponent } from './card.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { CardTitleDirective } from './directives/card-title.directive';
 import { CardBodyDirective } from './directives/card-body.directive';
@@ -9,7 +10,6 @@ import { CardHeaderMarkDirective } from './directives/card-header-mark.directive
 import { CardHeaderSubtitleDirective } from './directives/card-header-subtitle.directive';
 import { CardHeaderOvalComponent } from './components/card-header/components/card-header-oval/card-header-oval.component';
 import { CardHeaderLinearComponent } from './components/card-header/components/card-header-linear/card-header-linear.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [

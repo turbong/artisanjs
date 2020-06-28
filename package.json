@@ -1,6 +1,10 @@
 {
   "name": "miscellaneous",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": "craftsjs",
+  "description": "Material alert library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/addapptables/angular-miscellaneous",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,9 +12,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-styles": "scss-bundle -e ./projects/craftsjs/card/src/lib/_addapptable-card.theme.scss -o ./dist/craftsjs/card/_addapptables-card.theme.scss"
+    "build:libs": "node build.js && node compile-scss.js"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^9.1.0",
     "@angular/cdk": "^9.2.0",
@@ -24,6 +28,7 @@
     "@angular/router": "^9.1.0",
     "@ngrx/store": "^9.0.0",
     "@ngx-translate/core": "^12.1.2",
+    "@nrwl/angular": "^9.1.4",
     "perfect-scrollbar": "^1.5.0",
     "rxjs": "~6.5.4",
     "scss-bundle": "^3.1.1",
@@ -52,5 +57,21 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/angular-miscellaneous.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/angular-miscellaneous/issues"
+  },
+  "keywords": [
+    "craftsjs",
+    "angular",
+    "alert",
+    "card",
+    "menu",
+    "modal",
+    "notifier"
+  ]
 }

@@ -3,38 +3,78 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@craftsjs/card": {
+    "@craftsjs/ngrx-action": {
       "projectType": "library",
-      "root": "projects/craftsjs/card",
-      "sourceRoot": "projects/craftsjs/card/src",
+      "root": "projects/craftsjs/ngrx-action",
+      "sourceRoot": "projects/craftsjs/ngrx-action/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/card/tsconfig.lib.json",
-            "project": "projects/craftsjs/card/ng-package.json"
+            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.json",
+            "project": "projects/craftsjs/ngrx-action/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/card/tsconfig.lib.prod.json"
+              "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/card/src/test.ts",
-            "tsConfig": "projects/craftsjs/card/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/card/karma.conf.js"
+            "main": "projects/craftsjs/ngrx-action/src/test.ts",
+            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/ngrx-action/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/craftsjs/card/tsconfig.lib.json",
-              "projects/craftsjs/card/tsconfig.spec.json"
+              "projects/craftsjs/ngrx-action/tsconfig.lib.json",
+              "projects/craftsjs/ngrx-action/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/perfect-scrollbar": {
+      "projectType": "library",
+      "root": "projects/craftsjs/perfect-scrollbar",
+      "sourceRoot": "projects/craftsjs/perfect-scrollbar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
+            "project": "projects/craftsjs/perfect-scrollbar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/perfect-scrollbar/src/test.ts",
+            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/perfect-scrollbar/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
+              "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -75,6 +115,46 @@
             "tsConfig": [
               "projects/craftsjs/core/tsconfig.lib.json",
               "projects/craftsjs/core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@craftsjs/card": {
+      "projectType": "library",
+      "root": "projects/craftsjs/card",
+      "sourceRoot": "projects/craftsjs/card/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/craftsjs/card/tsconfig.lib.json",
+            "project": "projects/craftsjs/card/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/craftsjs/card/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/craftsjs/card/src/test.ts",
+            "tsConfig": "projects/craftsjs/card/tsconfig.spec.json",
+            "karmaConfig": "projects/craftsjs/card/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/craftsjs/card/tsconfig.lib.json",
+              "projects/craftsjs/card/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -195,86 +275,6 @@
             "tsConfig": [
               "projects/craftsjs/modal/tsconfig.lib.json",
               "projects/craftsjs/modal/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "@craftsjs/perfect-scrollbar": {
-      "projectType": "library",
-      "root": "projects/craftsjs/perfect-scrollbar",
-      "sourceRoot": "projects/craftsjs/perfect-scrollbar/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
-            "project": "projects/craftsjs/perfect-scrollbar/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/craftsjs/perfect-scrollbar/src/test.ts",
-            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/perfect-scrollbar/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
-              "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "@craftsjs/ngrx-action": {
-      "projectType": "library",
-      "root": "projects/craftsjs/ngrx-action",
-      "sourceRoot": "projects/craftsjs/ngrx-action/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.json",
-            "project": "projects/craftsjs/ngrx-action/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/craftsjs/ngrx-action/src/test.ts",
-            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/ngrx-action/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/ngrx-action/tsconfig.lib.json",
-              "projects/craftsjs/ngrx-action/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

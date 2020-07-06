@@ -11,7 +11,7 @@
     "@angular/material": ">= 10.0.0 < 11.0.0",
     "@angular/cdk": ">= 10.0.0 < 11.0.0",
     "@angular/animations": ">= 10.0.0 < 11.0.0",
-    "angular-l10n": ">= 10.0.0 < 11.0.0",
+    "@ngx-translate/core": ">= 13.0.0 < 14.0.0",
     "@craftsjs/core": ">=1.0.0 < 2.0.0"
   },
   "repository": {

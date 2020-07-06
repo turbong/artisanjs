@@ -1,4 +1,4 @@
-import { Action } from '@ngrx/store';
+import { createAction, props } from '@ngrx/store';
 import { MenuModel } from '../models/menu.model';
 
 export enum MenuActionTypes {
@@ -7,17 +7,8 @@ export enum MenuActionTypes {
     MenuOpened = '[Menu] Menu opened'
 }
 
-export class MenusLoaded implements Action {
-    readonly type = MenuActionTypes.MenusLoaded;
-    constructor(public payload: { menus: MenuModel[] }) { }
-}
+export const menusLoaded = createAction(MenuActionTypes.MenusLoaded, props<{ payload: { menus: MenuModel[] } }>());
 
-export class MenuMiniActivated implements Action {
-    readonly type = MenuActionTypes.MenuMiniActivated;
-}
+export const menuMiniActivated = createAction(MenuActionTypes.MenuMiniActivated);
 
-export class MenuOpened implements Action {
-    readonly type = MenuActionTypes.MenuOpened;
-}
-
-export type MenuActions = MenusLoaded | MenuMiniActivated | MenuOpened;
+export const menuOpened = createAction(MenuActionTypes.MenuOpened);

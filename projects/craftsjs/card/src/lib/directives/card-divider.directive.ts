@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: 'craftsjs-card-divider, [craftsjs-card-divider], [craftsjsCardDivider]',
+  selector: 'card-divider, [card-divider], [craftsjsCardDivider]',
   host: {
     class: 'card-divider'
   }

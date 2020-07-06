@@ -2,7 +2,7 @@ import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation, OnInit } 
 import { Store } from '@ngrx/store';
 import { ResponsiveService } from '@craftsjs/core';
 import { MenuModel } from '../../../../models/menu.model';
-import { MenuOpened } from '../../../../actions/menu.actions';
+import * as MenuActions from '../../../../actions/menu.actions';
 import { MenuService } from '../../../../services/menu.service';
 import { Observable } from 'rxjs';
 
@@ -36,6 +36,6 @@ export class SharedPrintMenuComponent implements OnInit {
 
     openCloseMenu() {
         const isMobile = this.responsiveService.isMobileSubject.getValue();
-        isMobile && this._store.dispatch(new MenuOpened());
+        isMobile && this._store.dispatch(MenuActions.menuOpened());
     }
 }

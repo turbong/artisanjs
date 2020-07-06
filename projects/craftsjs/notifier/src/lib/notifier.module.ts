@@ -34,7 +34,7 @@ export class NotifierModule {
     timeout: 5000,
     classIcon: 'material-icons',
     iconValue: 'notifications'
-  }): ModuleWithProviders {
+  }): ModuleWithProviders<NotifierModule> {
     return {
       ngModule: NotifierModule,
       providers: [

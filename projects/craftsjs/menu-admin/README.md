@@ -13,7 +13,7 @@ Choose the version corresponding to your Angular version:
 
  | Angular | @craftsjs/menu-admin |
  | ------- | -------------------- |
- | 9       | 1.x                  |
+ | 10      | 1.x                  |
 
 ```
 npm i @craftsjs/menu-admin --S
@@ -151,14 +151,14 @@ export class MenuComponent {
 - So now you can use the variables into the html as follows
 
 ```html
-<menu>
+<craftsjs-menu>
   <menu-header [header]="header">
   </menu-header>
   <menu-user [user]="user">
   </menu-user>
   <menu-items-link [menus]="menus">
   </menu-items-link>
-</menu>
+</craftsjs-menu>
 ```
 
 - In cellphone mode you can use the following component to collapse the menu

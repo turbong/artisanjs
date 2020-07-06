@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
 
 
 @Component({
-  selector: 'card',
+  selector: 'craftsjs-card',
   templateUrl: './card.component.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,

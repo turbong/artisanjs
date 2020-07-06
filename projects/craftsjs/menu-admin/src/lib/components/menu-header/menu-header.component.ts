@@ -1,6 +1,6 @@
 import { Component, Input, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { MenuMiniActivated, MenuOpened } from '../../actions/menu.actions';
+import * as MenuActions from '../../actions/menu.actions';
 import { MenuHeaderModel } from '../../models/menu-header.model';
 import { Observable } from 'rxjs';
 import { MenuService } from '../../services/menu.service';
@@ -27,10 +27,10 @@ export class MenuHeaderComponent implements OnInit {
     }
 
     colapseMenu() {
-        this._store.dispatch(new MenuMiniActivated());
+        this._store.dispatch(MenuActions.menuMiniActivated());
     }
 
     closeMenu() {
-        this._store.dispatch(new MenuOpened());
+        this._store.dispatch(MenuActions.menuOpened());
     }
 }

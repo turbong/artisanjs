@@ -1,12 +1,8 @@
-import { Action } from '@ngrx/store';
+import { Action, createAction, props } from '@ngrx/store';
 
 export enum ResponsiveActionTypes {
     ScreenChanged = '[Responsive] Screen changed'
 }
 
-export class ScreenChanged implements Action {
-    readonly type = ResponsiveActionTypes.ScreenChanged;
-    constructor(public payload: { width: number }) { }
-}
+export const screenChanged = createAction(ResponsiveActionTypes.ScreenChanged, props<{ payload: { width: number } }>());
 
-export type ResponsiveActions = ScreenChanged;

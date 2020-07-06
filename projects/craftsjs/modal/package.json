@@ -1,16 +1,16 @@
 {
-  "name": "@craftsjs/menu-admin",
-  "version": "0.0.1",
+  "name": "@craftsjs/modal",
+  "version": "1.0.0",
   "author": "craftsjs",
-  "description": "Material menu library for angular",
+  "description": "Material modal is a library for angular",
   "license": "MIT",
   "homepage": "https://github.com/addapptables/angular-miscellaneous",
   "peerDependencies": {
-    "@angular/common": ">=9.0.0 < 10.0.0",
-    "@angular/core": ">=9.0.0 < 10.0.0",
-    "@angular/material": ">=9.0.0 < 10.0.0",
-    "@angular/animations": ">=9.0.0 < 10.0.0",
-    "@angular/cdk": ">=9.0.0 < 10.0.0"
+    "@angular/common": ">=10.0.0 < 11.0.0",
+    "@angular/core": ">=10.0.0 < 11.0.0",
+    "@angular/material": ">=10.0.0 < 11.0.0",
+    "@angular/animations": ">=10.0.0 < 11.0.0",
+    "@angular/cdk": ">=10.0.0 < 11.0.0"
   },
   "repository": {
     "type": "git",
@@ -26,4 +26,8 @@
     "craftsjs modal",
     "craftsjs"
   ]
+,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
 }

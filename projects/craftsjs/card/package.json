@@ -1,16 +1,16 @@
 {
   "name": "@craftsjs/card",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Craftsjs",
   "description": "Material card library for angular",
   "license": "MIT",
   "homepage": "https://github.com/addapptables/angular-miscellaneous",
   "peerDependencies": {
-    "@angular/common": ">= 9.0.0 < 10.0.0",
-    "@angular/core": ">= 9.0.0 < 10.0.0",
-    "@angular/animations": ">= 9.0.0 < 10.0.0",
-    "@angular/material": ">= 9.0.0 < 10.0.0",
-    "@angular/cdk": ">= 9.0.0 < 10.0.0"
+    "@angular/common": ">= 10.0.0 < 11.0.0",
+    "@angular/core": ">= 10.0.0 < 11.0.0",
+    "@angular/animations": ">= 10.0.0 < 11.0.0",
+    "@angular/material": ">= 10.0.0 < 11.0.0",
+    "@angular/cdk": ">= 10.0.0 < 11.0.0"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "angular card material",
     "material",
     "Craftsjs"
-  ]
+  ],
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
 }

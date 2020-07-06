@@ -44,9 +44,6 @@ export class PerfectScrollbarDirective implements AfterViewInit, OnDestroy {
 
     initPerfectScroll() {
         this.ps = new PerfectScrollbar(this._elementRef.nativeElement, {});
-        if (window.addEventListener) {
-            this._elementRef.nativeElement.addEventListener('DOMSubtreeModified', this.psUpdate.bind(this), false);
-        }
     }
 
     private psUpdate() {

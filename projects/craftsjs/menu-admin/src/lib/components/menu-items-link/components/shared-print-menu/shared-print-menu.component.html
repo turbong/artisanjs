@@ -6,7 +6,8 @@
         </menu-single>
         <menu-group #menuGroup *ngIf="menu.multiOption" [menu]="menu">
             <shared-print-menu class="menu-children" [menus]="menu.children" *ngIf="menuGroup.isOpen$ | async"
-                [isDetail]="true"></shared-print-menu>
+                [isDetail]="true">
+            </shared-print-menu>
         </menu-group>
     </li>
 </ul>

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable, fromEvent, BehaviorSubject } from 'rxjs';
 import { distinctUntilChanged, startWith, tap, debounceTime, map } from 'rxjs/operators';
-import { ScreenChanged } from '../actions/responsive.actions';
+import * as ResponsiveActions from '../actions/responsive.actions';
 import { selectAllScreen } from '../selectors/responsive.selector';
 import { ScreenModel } from '../models/screen.model';
 
@@ -23,7 +23,7 @@ export class ResponsiveService {
                 map(this.getWindowWith),
                 distinctUntilChanged(),
                 startWith(window.innerWidth),
-                tap(width => this._store.dispatch(new ScreenChanged({ width }))),
+                tap(width => this._store.dispatch(ResponsiveActions.screenChanged({ payload: { width } }))),
             );
     }
 

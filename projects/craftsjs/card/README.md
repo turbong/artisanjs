@@ -13,7 +13,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/card
  ----------- | -------------------
- 9           | 1.x
+ 10           | 1.x
 
 ```
 npm i @craftsjs/card --S
@@ -43,7 +43,7 @@ export class YourModule { }
 
 simple card
 ```html
-<card>
+<craftsjs-card>
   <card-header>
     <card-header-linear>
       <card-title>
@@ -56,12 +56,12 @@ simple card
   <card-body>
     // custom component
   </card-body>
-</card>
+</craftsjs-card>
 ```
 
 Oval card
 ```html
-<card>
+<craftsjs-card>
   <card-header>
     <card-header-oval>
       <card-title>
@@ -73,7 +73,7 @@ Oval card
   <card-body>
     // custom component
   </card-body>
-</card>
+</craftsjs-card>
 ```
 
 - Finally, it is important to import the styles to the application

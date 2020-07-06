@@ -25,7 +25,7 @@ export class ReduxRegisterFeatureModule {
                 if (featureReducer.key) {
                     reducerFactory.addFeature({
                         reducers: mapped,
-                        reducerFactory: <any>combineReducers,
+                        reducerFactory: combineReducers as any,
                         key: featureReducer.key
                     });
                 }

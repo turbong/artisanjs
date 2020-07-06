@@ -33,7 +33,7 @@ import { CRAFTSJS_MODAL_CONFIG } from './tokens';
   ]
 })
 export class ModalModule {
-  static forRoot(config: ModalConfig = { width: '800px' }): ModuleWithProviders {
+  static forRoot(config: ModalConfig = { width: '800px' }): ModuleWithProviders<ModalModule> {
     return {
       ngModule: ModalModule,
       providers: [

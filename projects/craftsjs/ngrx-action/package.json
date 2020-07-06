@@ -1,14 +1,14 @@
 {
   "name": "@craftsjs/ngrx-action",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "craftsjs",
   "description": "Material menu library for angular",
   "license": "MIT",
   "homepage": "https://github.com/addapptables/angular-miscellaneous",
   "peerDependencies": {
-    "@angular/common": ">=9.0.0 < 10.0.0",
-    "@angular/core": ">=9.0.0 < 10.0.0",
-    "@ngrx/store": ">=9.0.0 < 10.0.0",
+    "@angular/common": ">=10.0.0 < 11.0.0",
+    "@angular/core": ">=10.0.0 < 11.0.0",
+    "@ngrx/store": ">=10.0.0 < 11.0.0",
     "rxjs": ">=6.0.0 < 7.0.0"
   },
   "repository": {
@@ -21,4 +21,8 @@
   "keywords": [
     "craftsjs"
   ]
+,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
 }

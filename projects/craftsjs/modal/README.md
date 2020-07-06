@@ -11,7 +11,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/modal
  ----------- | -------------------
- 9           | 1.x
+ 10          | 1.x
 
 ```
 npm i @craftsjs/modal --S
@@ -61,7 +61,7 @@ export class FormModalComponent {
 ```
 
 ```html
-<modal>
+<craftsjs-modal>
   <modal-header>
     <h3 class="text-accent">Title</h3>
     <button mat-icon-button (click)="close()">
@@ -77,7 +77,7 @@ export class FormModalComponent {
     </button>
     <button type="button" mat-raised-button (click)="close()">Close</button>
   </modal-footer>
-</modal>
+</craftsjs-modal>
 ```
 
 ```typescript

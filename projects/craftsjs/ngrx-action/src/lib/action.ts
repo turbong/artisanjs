@@ -1,13 +1,12 @@
 import { ensureStoreMetadata } from './internals';
-import { ActionType } from './symbols';
+import { ActionCreator } from '@ngrx/store';
 
-export function Action(...actionsKlasses: ActionType[]) {
-    return function (target: any, name: string, descriptor: TypedPropertyDescriptor<any>) {
+export function Action(...actionsKlasses: ActionCreator[]) {
+    return function(target: any, name: string, descriptor: TypedPropertyDescriptor<any>) {
         const meta = ensureStoreMetadata(target.constructor);
 
         for (const klass of actionsKlasses) {
-            const inst = new klass();
-            const type = inst.type;
+            const type = klass.type;
 
             if (meta.actions[type]) {
                 throw new Error(

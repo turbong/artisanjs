@@ -13,7 +13,7 @@ Choose the version corresponding to your Angular version:
 
  | Angular | @craftsjs/alert |
  | ------- | --------------- |
- | 9       | 1.x             |
+ | 10      | 1.x             |
 
 ```
 npm i @craftsjs/alert --S

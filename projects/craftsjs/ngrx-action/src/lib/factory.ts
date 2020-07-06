@@ -1,12 +1,10 @@
-import { Action } from '@ngrx/store';
-import { materialize } from 'rxjs/operators';
-
+import { Action, ActionCreator } from '@ngrx/store';
 import { NGRX_ACTIONS_META, StoreMetadata } from './internals';
-import { NgrxSelect } from './select';
 
 export function createReducer<TState = any>(
     store:
         | {
+            // tslint:disable-next-line:callable-types
             new(...args: any[]): any;
         }
         | any
@@ -19,9 +17,9 @@ export function createReducer<TState = any>(
     }
 
     const instance = isInstance ? store : new store();
-    const { initialState, actions, effects } = klass[NGRX_ACTIONS_META] as StoreMetadata;
+    const { initialState, actions } = klass[NGRX_ACTIONS_META] as StoreMetadata;
 
-    return function (state: any = initialState, action: Action) {
+    return (state: any = initialState, action: ActionCreator) => {
         const actionMeta = actions[action.type];
         if (actionMeta) {
             const result = instance[actionMeta.fn](state, action);
@@ -34,27 +32,6 @@ export function createReducer<TState = any>(
             }
             state = result;
         }
-
-        const effectMeta = effects[action.type];
-        if (effectMeta) {
-            const retVal = instance[effectMeta.fn](state, action);
-            if (retVal) {
-                if (retVal.subscribe) {
-                    retVal.pipe(materialize()).subscribe(res => {
-                        if (res.value && NgrxSelect.store) {
-                            NgrxSelect.store.dispatch(res.value);
-                        }
-                    });
-                } else if (NgrxSelect.store) {
-                    if (Array.isArray(retVal)) {
-                        retVal.forEach(r => NgrxSelect.store && NgrxSelect.store.dispatch(r));
-                    } else {
-                        NgrxSelect.store.dispatch(retVal);
-                    }
-                }
-            }
-        }
-
         return state;
     };
 }

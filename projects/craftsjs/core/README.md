@@ -9,7 +9,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @addapptables/core
  ----------- | -------------------
- 9           | 1.x
+ 10          | 1.x
 
 ```
 npm i @crafsjs/core --S

@@ -1,6 +1,6 @@
 import { Store, Action } from '@craftsjs/ngrx-action';
 import { MenuStoreModel } from '../models/menu.store.model';
-import { MenusLoaded, MenuMiniActivated, MenuOpened } from '../actions/menu.actions';
+import * as MenuActions from '../actions/menu.actions';
 
 
 @Store<MenuStoreModel>({
@@ -9,17 +9,17 @@ import { MenusLoaded, MenuMiniActivated, MenuOpened } from '../actions/menu.acti
 })
 export class MenuStore {
 
-    @Action(MenusLoaded)
-    menusLoaded(state: MenuStoreModel, { payload: { menus } }: MenusLoaded) {
+    @Action(MenuActions.menusLoaded)
+    menusLoaded(state: MenuStoreModel, { payload: { menus } }) {
         return { ...state, loading: false, menus };
     }
 
-    @Action(MenuMiniActivated)
+    @Action(MenuActions.menuMiniActivated)
     menuMiniActivated(state: MenuStoreModel) {
         return { ...state, activeMenuMini: !state.activeMenuMini };
     }
 
-    @Action(MenuOpened)
+    @Action(MenuActions.menuOpened)
     menuOpened(state: MenuStoreModel) {
         return { ...state, isOpen: !state.isOpen };
     }

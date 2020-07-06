@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { MenuOpened } from '../../actions/menu.actions';
+import * as MenuActions from '../../actions/menu.actions';
 
 @Component({
     selector: 'button-mobile',
@@ -15,6 +15,6 @@ export class ButtonMobileComponent {
     constructor(private readonly _store: Store<any>) { }
 
     openMenu() {
-        this._store.dispatch(new MenuOpened());
+        this._store.dispatch(MenuActions.menuOpened());
     }
 }

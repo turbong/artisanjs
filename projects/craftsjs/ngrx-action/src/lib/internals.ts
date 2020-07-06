@@ -1,4 +1,4 @@
-import { ActionType } from './symbols';
+import { ActionCreator } from '@ngrx/store';
 
 export const NGRX_ACTIONS_META = '__ngrx__actions__';
 
@@ -9,7 +9,7 @@ export interface StoreMetadata {
 }
 
 export interface ActionMeta {
-    action: ActionType;
+    action: ActionCreator;
     fn: string;
     type: string;
 }

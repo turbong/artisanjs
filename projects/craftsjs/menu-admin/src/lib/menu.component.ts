@@ -11,16 +11,17 @@ import {
 import { Observable, Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { tap, delay } from 'rxjs/operators';
-import { MenuOpened } from './actions/menu.actions';
+import * as MenuActions from './actions/menu.actions';
 import { MenuService } from './services/menu.service';
 
 @Component({
-  selector: 'menu',
+  selector: 'craftsjs-menu',
   templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   host: {
-    class: 'd-flex flex-column flex-wrap align-content-start'
+    class: 'principal-menu d-flex flex-column flex-wrap align-content-start'
   }
 })
 export class MenuComponent implements OnInit, OnDestroy {
@@ -65,7 +66,7 @@ export class MenuComponent implements OnInit, OnDestroy {
   @HostListener('click')
   closeMenu() {
     if (this.isOpen && this.activeMobile) {
-      this._store.dispatch(new MenuOpened());
+      this._store.dispatch(MenuActions.menuOpened());
     }
   }
 

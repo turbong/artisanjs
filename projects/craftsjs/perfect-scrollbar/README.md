@@ -8,7 +8,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/perfect-scrollbar
  ----------- | -------------------
- 9           | 1.x
+ 10          | 1.x
 
 ```
 npm i @craftsjs/perfect-scrollbar perfect-scrollbar --S

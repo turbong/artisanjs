@@ -1,6 +1,6 @@
 import { Store, Action } from '@craftsjs/ngrx-action';
 import { ResponsiveStoreModel } from '../models/responsive-store.model';
-import { ScreenChanged } from '../actions/responsive.actions';
+import * as ResponseActions from '../actions/responsive.actions';
 
 @Store<ResponsiveStoreModel>({
     screen: {
@@ -18,8 +18,8 @@ export class ResponsiveStore {
     readonly LARGE = 992;
     readonly EXTRA_LARGE = 1200;
 
-    @Action(ScreenChanged)
-    screenChanged(state: ResponsiveStoreModel, { payload: { width } }: ScreenChanged) {
+    @Action(ResponseActions.screenChanged)
+    screenChanged(state: ResponsiveStoreModel, { payload: { width } }) {
         const xs = width <= this.SMALL;
         const sm = width > this.SMALL && width <= this.MEDIUM;
         const md = width > this.MEDIUM && width <= this.LARGE;

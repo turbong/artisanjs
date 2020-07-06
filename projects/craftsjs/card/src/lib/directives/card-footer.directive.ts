@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: 'craftsjs-card-footer, [craftsjs-card-footer], [craftsjsCardFooter]',
+  selector: 'card-footer, [card-footer], [craftsjsCardFooter]',
   host: { class: 'card-footer' }
 })
 export class CardFooterDirective { }

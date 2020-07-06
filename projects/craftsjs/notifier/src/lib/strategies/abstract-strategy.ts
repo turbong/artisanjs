@@ -1,4 +1,4 @@
-import { Inject, OnDestroy } from '@angular/core';
+import { Inject, OnDestroy, Injectable } from '@angular/core';
 import { NotifierRef } from '../notifier-ref';
 import { DOCUMENT } from '@angular/common';
 import { take } from 'rxjs/operators';

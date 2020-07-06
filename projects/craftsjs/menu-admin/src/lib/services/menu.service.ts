@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { selectAllScreen } from '@craftsjs/core';
 import { map, distinctUntilChanged, shareReplay } from 'rxjs/operators';
 import { Observable, combineLatest } from 'rxjs';
-import { MenuOpened } from '../actions/menu.actions';
+import * as MenuActions from '../actions/menu.actions';
 import { selectActiveMenuMini, selectMenuOpen } from '../selectors/menu.selector';
 
 @Injectable({
@@ -56,7 +56,7 @@ export class MenuService {
             this.open$
         ]).pipe(
             map(([activeMobile, isOpen]) => {
-                isOpen && !activeMobile && this._store.dispatch(new MenuOpened());
+                isOpen && !activeMobile && this._store.dispatch(MenuActions.menuOpened());
                 return activeMobile;
             }),
             distinctUntilChanged(),

@@ -8,7 +8,7 @@ import { StoreModule } from '@ngrx/store';
     imports: [StoreModule]
 })
 export class ReduxRegisterModule {
-    static forRoot(reducers: any): ModuleWithProviders {
+    static forRoot(reducers: any): ModuleWithProviders<ReduxRegisterRootModule> {
         return {
             ngModule: ReduxRegisterRootModule,
             providers: [
@@ -20,7 +20,7 @@ export class ReduxRegisterModule {
         };
     }
 
-    static forFeature(key: any, reducers?: any): ModuleWithProviders {
+    static forFeature(key: any, reducers?: any): ModuleWithProviders<ReduxRegisterFeatureModule> {
         return {
             ngModule: ReduxRegisterFeatureModule,
             providers: [

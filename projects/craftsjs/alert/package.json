@@ -1,18 +1,18 @@
 {
   "name": "@craftsjs/alert",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "craftsjs",
   "description": "Material alert library for angular",
   "license": "MIT",
   "homepage": "https://github.com/addapptables/angular-miscellaneous",
   "peerDependencies": {
-    "@angular/common": ">= 10.0.0 < 11.0.0",
-    "@angular/core": ">= 10.0.0 < 11.0.0",
-    "@angular/material": ">= 10.0.0 < 11.0.0",
-    "@angular/cdk": ">= 10.0.0 < 11.0.0",
-    "@angular/animations": ">= 10.0.0 < 11.0.0",
+    "@angular/common": ">= 11.0.0 < 12.0.0",
+    "@angular/core": ">= 11.0.0 < 12.0.0",
+    "@angular/material": ">= 11.0.0 < 12.0.0",
+    "@angular/cdk": ">= 11.0.0 < 12.0.0",
+    "@angular/animations": ">= 11.0.0 < 12.0.0",
     "@ngx-translate/core": ">= 13.0.0 < 14.0.0",
-    "@craftsjs/core": ">=1.0.0 < 2.0.0"
+    "@craftsjs/core": ">=2.0.0 < 3.0.0"
   },
   "repository": {
     "type": "git",

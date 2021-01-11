@@ -9,6 +9,11 @@
     $primary: map-get($theme, primary);
     $foreground: map-get($theme, foreground);
     .menu {
+        a {
+          text-decoration: none;
+          color: white;
+          display: flex;
+        }
         color: map-get($variables, text);
         width: 300px;
         background-color: mat-color($primary, 1);

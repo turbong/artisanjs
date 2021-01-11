@@ -13,7 +13,8 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/card
  ----------- | -------------------
- 10           | 1.x
+ 11          | 2.x
+ 10          | 1.x
 
 ```
 npm i @craftsjs/card --S

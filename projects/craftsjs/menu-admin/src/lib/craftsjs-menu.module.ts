@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReduxRegisterModule } from '@craftsjs/ngrx-actions';
-import { CraftsjsPerfectScrollbarModule } from '@craftsjs/perfect-scrollbar';
+import { PerfectScrollbarModule } from '@craftsjs/perfect-scrollbar';
 import { CraftsjsMenuComponent } from './craftsjs-menu.component';
 import { MenuHeaderComponent } from './components/menu-header/menu-header.component';
 import { MenuItemsLinkComponent } from './components/menu-items-link/menu-items-link.component';
@@ -23,7 +23,7 @@ import { CollapseButtonMobileComponent } from './components/collapse-button-mobi
     MatIconModule,
     MatTooltipModule,
     RouterModule,
-    CraftsjsPerfectScrollbarModule,
+    PerfectScrollbarModule,
     ReduxRegisterModule.forFeature('craftsjsmenu', { sidebar: MenuStore }),
   ],
   declarations: [

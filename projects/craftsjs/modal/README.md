@@ -11,6 +11,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/modal
  ----------- | -------------------
+ 11          | 2.x
  10          | 1.x
 
 ```

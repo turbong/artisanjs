@@ -8221,14 +8221,14 @@ rxjs@6.5.5:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@6.6.3, rxjs@^6.6.0:
+rxjs@6.6.3, rxjs@^6.6.0, rxjs@~6.6.3:
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
   integrity sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.5.0, rxjs@~6.5.4:
+rxjs@^6.5.0:
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.4.tgz#e0777fe0d184cec7872df147f303572d414e211c"
   integrity sha512-naMQXcgEo3csAEGvw/NydRA0fuS2nDZJiw1YUWFKU7aPPAPGZEsD4Iimit96qwCieH6y614MCLYwdkrWx7z/7Q==
@@ -10115,7 +10115,9 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zone.js@~0.10.2:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.10.3.tgz#3e5e4da03c607c9dcd92e37dd35687a14a140c16"
-  integrity sha512-LXVLVEq0NNOqK/fLJo3d0kfzd4sxwn2/h67/02pjCjfKDxgx1i9QqpvtHD8CrBnSSwMw5+dy11O7FRX5mkO7Cg==
+zone.js@0.11.3:
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.11.3.tgz#255a6313174731cc014d63233ef04fd9858da375"
+  integrity sha512-Y4hTHoh4VcxU5BDGAqEoOnOiyT254w6CiHtpQxAJUSMZPyVgdbKf+5R7Mwz6xsPhMIeBXk5rTopRZDpjssTCUg==
+  dependencies:
+    tslib "^2.0.0"

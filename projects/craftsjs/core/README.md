@@ -9,6 +9,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @addapptables/core
  ----------- | -------------------
+ 11          | 2.x
  10          | 1.x
 
 ```

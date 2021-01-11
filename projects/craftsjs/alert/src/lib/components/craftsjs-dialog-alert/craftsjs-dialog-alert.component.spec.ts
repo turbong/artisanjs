@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CraftsjsDialogAlertComponent } from './craftsjs-dialog-alert.component';
 
@@ -6,7 +6,7 @@ describe('CraftjsDialogAlertComponent', () => {
   let component: CraftsjsDialogAlertComponent;
   let fixture: ComponentFixture<CraftsjsDialogAlertComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [CraftsjsDialogAlertComponent]
     })

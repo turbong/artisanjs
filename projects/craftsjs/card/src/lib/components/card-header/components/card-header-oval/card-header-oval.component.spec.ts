@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CardHeaderOvalComponent } from './card-header-oval.component';
 
@@ -6,7 +6,7 @@ describe('CardHeaderOvalComponent', () => {
   let component: CardHeaderOvalComponent;
   let fixture: ComponentFixture<CardHeaderOvalComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CardHeaderOvalComponent ]
     })

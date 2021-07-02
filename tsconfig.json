@@ -1,53 +1,59 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./projects/craftsjs/ngrx-action/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/ngrx-action/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/perfect-scrollbar/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/perfect-scrollbar/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/core/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/core/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/card/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/card/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/alert/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/alert/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/menu-admin/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/menu-admin/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/modal/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/modal/tsconfig.spec.json"
-    },
-    {
-      "path": "./projects/craftsjs/notifier/tsconfig.lib.json"
-    },
-    {
-      "path": "./projects/craftsjs/notifier/tsconfig.spec.json"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "incremental": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@craftsjs/card": [
+        "dist/craftsjs/card/craftsjs-card",
+        "dist/craftsjs/card"
+      ],
+      "@craftsjs/core": [
+        "dist/craftsjs/core/craftsjs-core",
+        "dist/craftsjs/core"
+      ],
+      "@craftsjs/alert": [
+        "dist/craftsjs/alert/craftsjs-alert",
+        "dist/craftsjs/alert"
+      ],
+      "@craftsjs/menu-admin": [
+        "dist/craftsjs/menu-admin/craftsjs-menu-admin",
+        "dist/craftsjs/menu-admin"
+      ],
+      "@craftsjs/modal": [
+        "dist/craftsjs/modal/craftsjs-modal",
+        "dist/craftsjs/modal"
+      ],
+      "@craftsjs/perfect-scrollbar": [
+        "dist/craftsjs/perfect-scrollbar/craftsjs-perfect-scrollbar",
+        "dist/craftsjs/perfect-scrollbar"
+      ],
+      "@craftsjs/ngrx-action": [
+        "dist/craftsjs/ngrx-action/craftsjs-ngrx-action",
+        "dist/craftsjs/ngrx-action"
+      ],
+      "@craftsjs/notifier": [
+        "dist/craftsjs/notifier/craftsjs-notifier",
+        "dist/craftsjs/notifier"
+      ]
     }
-  ]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableIvy": true
+  }
 }

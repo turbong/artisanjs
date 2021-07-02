@@ -18,7 +18,7 @@ function buildAll() {
     .reduce((err, exec) => {
       try {
         console.log(`Building ${exec.project} (${exec.config}):`);
-        child.execSync(`ng build --prod --project ${exec.project} --configuration ${exec.config}`, { stdio: "inherit" });
+        child.execSync(`ng build --project ${exec.project} --configuration ${exec.config}`, { stdio: "inherit" });
       }
       catch (error) {
         err.push({

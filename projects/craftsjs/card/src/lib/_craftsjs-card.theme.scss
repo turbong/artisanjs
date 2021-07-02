@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @import './components/card-header/craftsjs-card-header.theme';
 
 @mixin card($theme, $variables) {
@@ -17,9 +18,9 @@
     $card-header-margin: -20px 15px 0 16px;
     $card-header-padding: 20px;
     $card-title-font-weight: 500;
-    $card-header-box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px mat-color($accent);
+    $card-header-box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px mat.get-color-from-palette($accent);
     $card-header-icon-margin-right: 10px;
-    $background-color-header: mat-color($accent);
+    $background-color-header: mat.get-color-from-palette($accent);
 
     // body
     $card-body-padding: 12px 20px 20px;
@@ -35,7 +36,7 @@
         width: 100%;
         margin: $card-padding;
         box-shadow: $card-box-shadow;
-        background: mat-color($background, card);
+        background: mat.get-color-from-palette($background, card);
         margin-top: 32px;
         &-header {
             &-oval {
@@ -73,7 +74,7 @@
         &-footer {
             margin: $card-footer-margin;
             padding-top: $card-padding-top;
-            border-top: 1px solid mat-color($foreground, divider);
+            border-top: 1px solid mat.get-color-from-palette($foreground, divider);
         }
         &-divider {
             display: block;

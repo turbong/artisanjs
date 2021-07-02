@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @import './components/menu-items-link/menu-children.theme';
 @import './mixins';
 
@@ -16,8 +17,8 @@
         }
         color: map-get($variables, text);
         width: 300px;
-        background-color: mat-color($primary, 1);
-        @include mat-elevation(1);
+        background-color: mat.get-color-from-palette($primary, 1);
+        @include mat.elevation(1);
         z-index: 2;
         flex: 1 1 100%;
         box-sizing: border-box;
@@ -168,9 +169,9 @@
             &-button{
                 &-active{
                     @include transition();
-                    background-color: mat-color($background, raised-button);
-                    color: mat-color($foreground, icon) !important;
-                    @include mat-elevation(1);
+                    background-color: mat.get-color-from-palette($background, raised-button);
+                    color: mat.get-color-from-palette($foreground, icon) !important;
+                    @include mat.elevation(1);
                     &>button {
                         &>.mat-button-focus-overlay{
                             opacity: 0 !important;
@@ -192,7 +193,7 @@
             height: 100%;
             left: 0;
             top: 0;
-            background: mat-color($background, disabled-button);
+            background: mat.get-color-from-palette($background, disabled-button);
             z-index: 10;
         }
     }

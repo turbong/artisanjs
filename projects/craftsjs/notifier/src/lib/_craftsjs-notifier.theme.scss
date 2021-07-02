@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @mixin notifier($theme, $variables) {
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);
@@ -31,17 +32,17 @@
             }
         }
         &-primary {
-            background-color: mat-color($primary, 0.9) !important;
-            color: mat-color($primary, 0.9) !important;
+            background-color: mat.get-color-from-palette($primary, 0.9) !important;
+            color: mat.get-color-from-palette($primary, 0.9) !important;
             & > i {
-                color: mat-color($primary, 0.9) !important;
+                color: mat.get-color-from-palette($primary, 0.9) !important;
             }
         }
         &-accent {
-            background-color: mat-color($accent, 0.9) !important;
-            color: mat-color($accent, 0.9) !important;
+            background-color: mat.get-color-from-palette($accent, 0.9) !important;
+            color: mat.get-color-from-palette($accent, 0.9) !important;
             & > i {
-                color: mat-color($accent, 0.9) !important;
+                color: mat.get-color-from-palette($accent, 0.9) !important;
             }
         }
     }

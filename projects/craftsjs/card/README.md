@@ -13,6 +13,7 @@ Choose the version corresponding to your Angular version:
 
  Angular     | @craftsjs/card
  ----------- | -------------------
+ 12          | 3.x
  11          | 2.x
  10          | 1.x
 

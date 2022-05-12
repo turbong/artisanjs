@@ -2,13 +2,6 @@
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../../dist/craftsjs/menu-admin",
   "lib": {
-    "entryFile": "src/public-api.ts",
-    "umdModuleIds": {
-      "@craftsjs/core": "craftsjs-core",
-      "@craftsjs/ngrx-action": "craftsjs-ngrx-action",
-      "@craftsjs/perfect-scrollbar": "craftsjs-perfect-scrollbar",
-      "@ngx-translate/core": "ngx-translate-core",
-      "@ngrx/store": "ngrx-store"
-    }
+    "entryFile": "src/public-api.ts"
   }
 }

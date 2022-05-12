@@ -28,18 +28,6 @@
             "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/ngrx-action/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/ngrx-action/tsconfig.lib.json",
-              "projects/craftsjs/ngrx-action/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -67,18 +55,6 @@
             "main": "projects/craftsjs/perfect-scrollbar/src/test.ts",
             "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/perfect-scrollbar/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
-              "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
@@ -108,18 +84,6 @@
             "tsConfig": "projects/craftsjs/core/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/core/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/core/tsconfig.lib.json",
-              "projects/craftsjs/core/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -147,18 +111,6 @@
             "main": "projects/craftsjs/card/src/test.ts",
             "tsConfig": "projects/craftsjs/card/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/card/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/card/tsconfig.lib.json",
-              "projects/craftsjs/card/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
@@ -188,18 +140,6 @@
             "tsConfig": "projects/craftsjs/alert/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/alert/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/alert/tsconfig.lib.json",
-              "projects/craftsjs/alert/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -227,18 +167,6 @@
             "main": "projects/craftsjs/menu-admin/src/test.ts",
             "tsConfig": "projects/craftsjs/menu-admin/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/menu-admin/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/menu-admin/tsconfig.lib.json",
-              "projects/craftsjs/menu-admin/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
@@ -268,18 +196,6 @@
             "tsConfig": "projects/craftsjs/modal/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/modal/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/modal/tsconfig.lib.json",
-              "projects/craftsjs/modal/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     },
@@ -307,18 +223,6 @@
             "main": "projects/craftsjs/notifier/src/test.ts",
             "tsConfig": "projects/craftsjs/notifier/tsconfig.spec.json",
             "karmaConfig": "projects/craftsjs/notifier/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/craftsjs/notifier/tsconfig.lib.json",
-              "projects/craftsjs/notifier/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }

@@ -16,32 +16,25 @@ import {
 import { AlertService } from './services/alert.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TranslateModule,
-    MatButtonModule,
-    CoreModule,
-    MatDialogModule
-  ],
-  declarations: [
-    DialogAlertComponent,
-    AlertSuccessComponent,
-    AlertInfoComponent,
-    WarningComponent,
-    ErrorComponent,
-    AlertOkButtonComponent,
-    AlertCancelButtonComponent
-  ],
-  exports: [
-    DialogAlertComponent
-  ],
-  entryComponents: [
-    DialogAlertComponent,
-    AlertSuccessComponent,
-    AlertInfoComponent,
-    WarningComponent,
-    ErrorComponent
-  ]
+    imports: [
+        CommonModule,
+        TranslateModule,
+        MatButtonModule,
+        CoreModule,
+        MatDialogModule
+    ],
+    declarations: [
+        DialogAlertComponent,
+        AlertSuccessComponent,
+        AlertInfoComponent,
+        WarningComponent,
+        ErrorComponent,
+        AlertOkButtonComponent,
+        AlertCancelButtonComponent
+    ],
+    exports: [
+        DialogAlertComponent
+    ]
 })
 export class AlertModule {
   static forRoot(): ModuleWithProviders<AlertModule> {

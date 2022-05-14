@@ -4,7 +4,6 @@ import {
   Inject,
   ViewEncapsulation,
   OnInit,
-  ComponentFactoryResolver,
   Injector,
   InjectionToken,
   Type,
@@ -17,7 +16,6 @@ import {
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AlertModel } from '../../models/alert.model';
 import { alertComponents } from './components/components';
-import { PortalInjector } from '@angular/cdk/portal';
 import { DynamicDirective } from '@craftsjs/core';
 
 export const CRAFTSJS_ALERT_DATA = new InjectionToken<any>('CraftsjsAlertData');
@@ -37,7 +35,6 @@ export class CraftsjsDialogAlertComponent implements OnInit, AfterViewInit {
   constructor(
     public dialogRef: MatDialogRef<CraftsjsDialogAlertComponent>,
     @Inject(MAT_DIALOG_DATA) public data: AlertModel,
-    private componentFactoryResolver: ComponentFactoryResolver
   ) {
   }
 
@@ -63,18 +60,25 @@ export class CraftsjsDialogAlertComponent implements OnInit, AfterViewInit {
     if (component instanceof TemplateRef) {
       viewContainerRef.createEmbeddedView(component, { $implicit: this.data, dialogRef: this.dialogRef });
     } else {
-      const componentFactory = component && this.componentFactoryResolver.resolveComponentFactory(component);
       const injector = this.createInjector(viewContainerRef.injector);
-      viewContainerRef.createComponent(componentFactory, null, injector);
+      viewContainerRef.createComponent(component, {
+        injector: injector
+      })
     }
   }
 
-  private createInjector(injector: Injector): PortalInjector {
-    const injectionTokens = new WeakMap<any, any>([
-      [CRAFTSJS_ALERT_DATA, this.data],
-      [MatDialogRef, this.dialogRef]
-    ]);
-    return new PortalInjector(injector, injectionTokens);
+  private createInjector(injector: Injector) {
+    return Injector.create({
+      providers: [{
+        provide: CRAFTSJS_ALERT_DATA,
+        useValue: this.data
+      },
+      {
+        provide: MatDialogRef,
+        useValue: this.dialogRef
+      }],
+      parent: injector
+    })
   }
 
   buttonClick(result: string) {

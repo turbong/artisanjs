@@ -10,7 +10,6 @@ import {
   Injector,
   TemplateRef,
   ViewContainerRef,
-  ComponentFactoryResolver,
   ViewChild,
   OnInit
 } from '@angular/core';
@@ -21,7 +20,7 @@ import { take, tap, takeUntil } from 'rxjs/operators';
 import { ADDAPPTABLE_CONFIGURATION_NOTIFIER_DATA, ADDAPPTABLE_NOTIFIER_DATA } from './tokens';
 import { NotifierConfiguration } from './models/notifier-configuration.model';
 import { Notifier } from './models/notifier.model';
-import { PortalInjector, ComponentType } from '@angular/cdk/portal';
+import { ComponentType } from '@angular/cdk/portal';
 import { DynamicDirective } from '@craftsjs/core';
 import { NotifierPositionType } from './models/notifier-position-enum.model';
 
@@ -62,7 +61,6 @@ export class NotifierComponent implements OnInit, AfterViewInit, OnDestroy {
   constructor(
     @Inject(ADDAPPTABLE_CONFIGURATION_NOTIFIER_DATA) configuration: NotifierConfiguration,
     @Inject(ADDAPPTABLE_NOTIFIER_DATA) public data: Notifier,
-    private componentFactoryResolver: ComponentFactoryResolver
   ) {
     this.configuration = Object.assign({
       position: NotifierPositionType.bottomRight,
@@ -110,23 +108,27 @@ export class NotifierComponent implements OnInit, AfterViewInit, OnDestroy {
     this._state = 'exit';
   }
 
-  private resolveComponent(component: ComponentType<{}> | TemplateRef<{}>, viewContainerRef: ViewContainerRef) {
+  private resolveComponent(component: ComponentType<any> | TemplateRef<any>, viewContainerRef: ViewContainerRef) {
     if (!component) { return; }
     viewContainerRef.clear();
     if (component instanceof TemplateRef) {
       viewContainerRef.createEmbeddedView(component, { $implicit: this.data });
     } else {
-      const componentFactory = component && this.componentFactoryResolver.resolveComponentFactory(component);
       const injector = this.createInjector(viewContainerRef.injector);
-      viewContainerRef.createComponent(componentFactory, null, injector);
+      viewContainerRef.createComponent(component,{
+        injector
+      });
     }
   }
 
-  private createInjector(injector: Injector): PortalInjector {
-    const injectionTokens = new WeakMap<any, any>([
-      [ADDAPPTABLE_NOTIFIER_DATA, this.data]
-    ]);
-    return new PortalInjector(injector, injectionTokens);
+  private createInjector(injector: Injector) {
+    return Injector.create({
+      providers: [{
+        provide: ADDAPPTABLE_NOTIFIER_DATA,
+        useValue: this.data
+      }],
+      parent: injector
+    })
   }
 
   ngOnDestroy(): void {

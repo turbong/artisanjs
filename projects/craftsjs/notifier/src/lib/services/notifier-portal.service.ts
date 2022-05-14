@@ -33,12 +33,14 @@ export class NotifierPortalService {
 
   private _createPaneElement(): HTMLElement {
     const pane = this._document.createElement('div');
+    // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
     pane.id = `${NOTIFIER + nextUniqueId++}`;
     this._notifierContainerService.getContainerElement().appendChild(pane);
     return pane;
   }
 
   get getLastUniqueId() {
+    // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
     return `${NOTIFIER + (nextUniqueId - 1)}`;
   }
 }

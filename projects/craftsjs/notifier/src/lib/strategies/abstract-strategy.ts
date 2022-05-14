@@ -1,9 +1,10 @@
-import { Inject, OnDestroy, Injectable } from '@angular/core';
+import { Inject, Injectable, OnDestroy } from '@angular/core';
 import { NotifierRef } from '../notifier-ref';
 import { DOCUMENT } from '@angular/common';
 import { take } from 'rxjs/operators';
 import { Strategy } from './strategy';
 
+@Injectable()
 export abstract class AbstractStrategy implements Strategy, OnDestroy {
     notifiers: NotifierRef[] = [];
 
@@ -11,11 +12,12 @@ export abstract class AbstractStrategy implements Strategy, OnDestroy {
 
     maxNotifiers = 5;
 
-    constructor(@Inject(DOCUMENT) private _document: HTMLDocument) {
+    constructor(@Inject(DOCUMENT) private _document: Document) {
         this.notifiers = [];
     }
 
     newNotifier(notifierRef: NotifierRef) {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         notifierRef.afterClosed().pipe(take(1)).subscribe(this.deletePortal.bind(this));
         notifierRef.changedStyle(this.getStyleNewNotifier(notifierRef));
         setTimeout(() => {

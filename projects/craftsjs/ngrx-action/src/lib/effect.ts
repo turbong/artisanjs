@@ -1,8 +1,7 @@
-import { ActionType } from './symbols';
 import { ensureStoreMetadata } from './internals';
 
-export function Effect(...effectKlasses: ActionType[]) {
-    return function (target: any, name: string, descriptor: TypedPropertyDescriptor<any>) {
+export function Effect(...effectKlasses: any) {
+    return function (target: any, name: string) {
         const meta = ensureStoreMetadata(target.constructor);
 
         for (const klass of effectKlasses) {

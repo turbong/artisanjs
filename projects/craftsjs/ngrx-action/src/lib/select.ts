@@ -13,7 +13,7 @@ export function Select<TState = any, TValue = any>(
     selector: Selector<TState, TValue>
 ): (target: any, name: string) => void;
 
-export function Select<TState = any, TValue = any>(
+export function Select(
     selectorOrFeature?: string,
     ...paths: string[]
 ): (target: any, name: string) => void;
@@ -86,6 +86,7 @@ export function fastPropGetter(paths: string[]): (x: any) => any {
     while (++i < l) {
         expr = expr + ' && ' + (seg = seg + '.' + segments[i]);
     }
+    // eslint-disable-next-line @typescript-eslint/no-implied-eval
     const fn = new Function('store', 'return ' + expr + ';');
     return <(x: any) => any>fn;
 }

@@ -7,7 +7,7 @@ export class BottomRightStrategy extends AbstractStrategy {
 
     protected getStyleNewNotifier(notifierRef: NotifierRef) {
         notifierRef.component._state = 'slideInUp';
-        return { bottom: `0px`, right: '0px' };
+        return { bottom: '0px', right: '0px' };
     }
 
     protected getStyleNotifierPosition(divNotifier: HTMLDivElement, clientHeight: number) {

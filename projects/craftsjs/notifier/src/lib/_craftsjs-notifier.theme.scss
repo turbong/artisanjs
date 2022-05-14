@@ -1,4 +1,3 @@
-@use '~@angular/material' as mat;
 @mixin notifier($theme, $variables) {
     $primary: map-get($theme, primary);
     $accent: map-get($theme, accent);

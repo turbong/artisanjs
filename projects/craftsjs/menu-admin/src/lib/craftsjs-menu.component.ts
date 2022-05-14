@@ -11,7 +11,7 @@ import {
 import { Observable, Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
 import { tap, delay } from 'rxjs/operators';
-import { MenuOpened } from './actions/menu.actions';
+import { menuOpened } from './actions/menu.actions';
 import { MenuService } from './services/menu.service';
 
 @Component({
@@ -65,7 +65,7 @@ export class CraftsjsMenuComponent implements OnInit, OnDestroy {
   @HostListener('click')
   closeMenu() {
     if (this.isOpen && this.activeMobile) {
-      this._store.dispatch(new MenuOpened());
+      this._store.dispatch(menuOpened());
     }
   }
 

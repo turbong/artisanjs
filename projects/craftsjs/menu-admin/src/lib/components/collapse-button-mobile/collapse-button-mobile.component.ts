@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { MenuOpened } from '../../actions/menu.actions';
+import { menuOpened } from '../../actions/menu.actions';
 
 @Component({
     selector: 'craftsjs-collapse-button-mobile',
@@ -15,6 +15,6 @@ export class CollapseButtonMobileComponent {
     constructor(private readonly _store: Store<any>) { }
 
     openMenu() {
-        this._store.dispatch(new MenuOpened());
+        this._store.dispatch(menuOpened());
     }
 }

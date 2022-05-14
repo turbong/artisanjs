@@ -10,6 +10,7 @@ export class ReduxRegisterRootModule {
             // tslint:disable-next-line:forin
             for (const key in reducers) {
                 const klass = reducers[key];
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
                 const inst = parentInjector.get(klass, new klass(), InjectFlags.Default);
                 reducerFactory.addReducer(key, createReducer(inst));
             }

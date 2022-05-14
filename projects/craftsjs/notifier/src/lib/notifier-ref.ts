@@ -9,14 +9,14 @@ export class NotifierRef {
 
     private readonly _portal: DomPortalOutlet;
 
-    private readonly _document: HTMLDocument;
+    private readonly _document: Document;
 
     private readonly _afterClose = new Subject<string>();
 
     constructor(
         component: NotifierComponent,
         portal: DomPortalOutlet,
-        document: HTMLDocument,
+        document: Document,
         id: string
     ) {
         this._component = component;

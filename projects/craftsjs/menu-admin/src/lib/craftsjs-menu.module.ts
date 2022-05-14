@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatIconModule, MatTooltipModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -14,6 +13,9 @@ import { MenuUserComponent } from './components/menu-user/menu-user.component';
 import { MenuStore } from './store/menu.store';
 import { SharedPrintMenuComponent } from './components/menu-items-link/components/shared-print-menu/shared-print-menu.component';
 import { CollapseButtonMobileComponent } from './components/collapse-button-mobile/collapse-button-mobile.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   imports: [

@@ -2,7 +2,7 @@ import { ensureStoreMetadata } from './internals';
 import { ActionCreator } from '@ngrx/store';
 
 export function Action(...actionsKlasses: ActionCreator[]) {
-    return function(target: any, name: string, descriptor: TypedPropertyDescriptor<any>) {
+    return function(target: any, name: string) {
         const meta = ensureStoreMetadata(target.constructor);
 
         for (const klass of actionsKlasses) {

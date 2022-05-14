@@ -1,12 +1,12 @@
 {
   "name": "@craftsjs/perfect-scrollbar",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": "Addapptables",
   "description": "Perfect scrollbar library for angular",
   "license": "MIT",
   "homepage": "https://github.com/addapptables/alert-ui",
   "peerDependencies": {
-    "@angular/core": ">=12.0.0 < 13.0.0",
+    "@angular/core": ">=13.0.0 < 14.0.0",
     "rxjs": ">=6.0.0 < 7.0.0",
     "perfect-scrollbar": ">=1.0.0 < 2.0.0"
   },

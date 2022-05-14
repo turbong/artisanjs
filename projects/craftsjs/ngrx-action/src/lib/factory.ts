@@ -12,6 +12,7 @@ export function createReducer<TState = any>(
     const isInstance = !store.prototype;
     const klass = isInstance ? store.constructor : store;
 
+    // eslint-disable-next-line no-prototype-builtins
     if (!klass.hasOwnProperty(NGRX_ACTIONS_META)) {
         throw new Error('A reducer can be created from a @Store decorated class only.');
     }

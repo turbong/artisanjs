@@ -18,6 +18,7 @@ export class ReduxRegisterFeatureModule {
                 // tslint:disable-next-line:forin
                 for (const key in featureReducer.reducers) {
                     const klass = featureReducer.reducers[key];
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
                     const inst = parentInjector.get(klass, new klass(), InjectFlags.Default);
                     mapped[key] = createReducer(inst);
                 }

@@ -28,7 +28,7 @@ export class NotifierService {
   constructor(
     private _notifierPortalService: NotifierPortalService,
     private _injector: Injector,
-    @Inject(DOCUMENT) private _document: any,
+    @Inject(DOCUMENT) private _document: Document,
     @Inject(ADDAPPTABLE_CONFIGURATION_NOTIFIER_DATA) configuration: NotifierConfiguration
   ) {
     this.defaultConfiguration = Object.assign(this.defaultConfiguration, configuration);

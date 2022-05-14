@@ -43,6 +43,7 @@ export class PerfectScrollbarDirective implements AfterViewInit, OnDestroy {
     }
 
     initPerfectScroll() {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         this.ps = new PerfectScrollbar(this._elementRef.nativeElement, {});
     }
 

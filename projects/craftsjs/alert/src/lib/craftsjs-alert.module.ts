@@ -37,7 +37,7 @@ import { AlertService } from './services/alert.service';
     ]
 })
 export class AlertModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<any> {
     return {
       ngModule: AlertModule,
       providers: [

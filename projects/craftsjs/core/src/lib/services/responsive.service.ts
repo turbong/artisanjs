@@ -31,6 +31,7 @@ export class ResponsiveService {
         const screen$ = this._store.pipe(
             select(selectAllScreen)
         );
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         screen$.subscribe(this._onScreenChange.bind(this));
     }
 

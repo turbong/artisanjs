@@ -1,0 +1,28 @@
+{
+  "name": "@artisanjs/ngrx-action",
+  "version": "1.0.0",
+  "author": "artisanjs",
+  "description": "Material menu library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/turbong/artisanjs",
+  "peerDependencies": {
+    "@angular/common": ">= 14.0.0 < 15.0.0",
+    "@angular/core": ">= 14.0.0 < 15.0.0",
+    "@ngrx/store": ">= 14.0.0 < 15.0.0",
+    "rxjs": ">= 6.0.0 < 7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbong/artisanjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turbong/artisanjs/issues"
+  },
+  "keywords": [
+    "artisanjs"
+  ]
+,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

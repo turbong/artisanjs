@@ -3,29 +3,29 @@ const bundle = require('scss-bundle');
 const fs = require('fs');
 
 const libraries = [{
-  source: './projects/craftsjs/card/src/lib',
-  name: '_craftsjs-card.theme.scss',
-  dest: './dist/craftsjs/card/'
+  source: './projects/artisanjs/card/src/lib',
+  name: '_artisanjs-card.theme.scss',
+  dest: './dist/artisanjs/card/'
 },
 {
-  source: './projects/craftsjs/alert/src/lib',
-  name: '_craftsjs-alert.theme.scss',
-  dest: './dist/craftsjs/alert/'
+  source: './projects/artisanjs/alert/src/lib',
+  name: '_artisanjs-alert.theme.scss',
+  dest: './dist/artisanjs/alert/'
 },
 {
-  source: './projects/craftsjs/core/src/lib/styles/grid',
-  name: '_craftsjs-grid.theme.scss',
-  dest: './dist/craftsjs/core/'
+  source: './projects/artisanjs/core/src/lib/styles/grid',
+  name: '_artisanjs-grid.theme.scss',
+  dest: './dist/artisanjs/core/'
 },
 {
-  source: './projects/craftsjs/menu-admin/src/lib',
-  name: '_craftsjs-menu.theme.scss',
-  dest: './dist/craftsjs/menu-admin/'
+  source: './projects/artisanjs/menu-admin/src/lib',
+  name: '_artisanjs-menu.theme.scss',
+  dest: './dist/artisanjs/menu-admin/'
 },
 {
-  source: './projects/craftsjs/notifier/src/lib',
-  name: '_craftsjs-notifier.theme.scss',
-  dest: './dist/craftsjs/notifier/'
+  source: './projects/artisanjs/notifier/src/lib',
+  name: '_artisanjs-notifier.theme.scss',
+  dest: './dist/artisanjs/notifier/'
 }];
 
 function bootstrap() {

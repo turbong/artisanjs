@@ -1,0 +1,31 @@
+{
+  "name": "@artisanjs/card",
+  "version": "1.0.0",
+  "author": "artisanjs",
+  "description": "Material card library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/turbong/artisanjs",
+  "peerDependencies": {
+    "@angular/common": ">= 14.0.0 < 15.0.0",
+    "@angular/core": ">= 14.0.0 < 15.0.0",
+    "@angular/animations": ">= 14.0.0 < 15.0.0",
+    "@angular/material": ">= 14.0.0 < 15.0.0",
+    "@angular/cdk": ">= 14.0.0 < 15.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbong/artisanjs"
+  },
+  "bugs": {
+    "url": "https://github.com/turbong/artisanjs/issues"
+  },
+  "keywords": [
+    "angular card",
+    "angular card material",
+    "material",
+    "artisanjs"
+  ],
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

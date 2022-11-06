@@ -17,37 +17,37 @@
       "dom"
     ],
     "paths": {
-      "@craftsjs/card": [
-        "dist/craftsjs/card/craftsjs-card",
-        "dist/craftsjs/card"
+      "@artisanjs/card": [
+        "dist/artisanjs/card/artisanjs-card",
+        "dist/artisanjs/card"
       ],
-      "@craftsjs/core": [
-        "dist/craftsjs/core/craftsjs-core",
-        "dist/craftsjs/core"
+      "@artisanjs/core": [
+        "dist/artisanjs/core/artisanjs-core",
+        "dist/artisanjs/core"
       ],
-      "@craftsjs/alert": [
-        "dist/craftsjs/alert/craftsjs-alert",
-        "dist/craftsjs/alert"
+      "@artisanjs/alert": [
+        "dist/artisanjs/alert/artisanjs-alert",
+        "dist/artisanjs/alert"
       ],
-      "@craftsjs/menu-admin": [
-        "dist/craftsjs/menu-admin/craftsjs-menu-admin",
-        "dist/craftsjs/menu-admin"
+      "@artisanjs/menu-admin": [
+        "dist/artisanjs/menu-admin/artisanjs-menu-admin",
+        "dist/artisanjs/menu-admin"
       ],
-      "@craftsjs/modal": [
-        "dist/craftsjs/modal/craftsjs-modal",
-        "dist/craftsjs/modal"
+      "@artisanjs/modal": [
+        "dist/artisanjs/modal/artisanjs-modal",
+        "dist/artisanjs/modal"
       ],
-      "@craftsjs/perfect-scrollbar": [
-        "dist/craftsjs/perfect-scrollbar/craftsjs-perfect-scrollbar",
-        "dist/craftsjs/perfect-scrollbar"
+      "@artisanjs/perfect-scrollbar": [
+        "dist/artisanjs/perfect-scrollbar/artisanjs-perfect-scrollbar",
+        "dist/artisanjs/perfect-scrollbar"
       ],
-      "@craftsjs/ngrx-action": [
-        "dist/craftsjs/ngrx-action/craftsjs-ngrx-action",
-        "dist/craftsjs/ngrx-action"
+      "@artisanjs/ngrx-action": [
+        "dist/artisanjs/ngrx-action/artisanjs-ngrx-action",
+        "dist/artisanjs/ngrx-action"
       ],
-      "@craftsjs/notifier": [
-        "dist/craftsjs/notifier/craftsjs-notifier",
-        "dist/craftsjs/notifier"
+      "@artisanjs/notifier": [
+        "dist/artisanjs/notifier/artisanjs-notifier",
+        "dist/artisanjs/notifier"
       ]
     }
   },

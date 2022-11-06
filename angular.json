@@ -3,226 +3,226 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@craftsjs/ngrx-action": {
+    "@artisanjs/ngrx-action": {
       "projectType": "library",
-      "root": "projects/craftsjs/ngrx-action",
-      "sourceRoot": "projects/craftsjs/ngrx-action/src",
+      "root": "projects/artisanjs/ngrx-action",
+      "sourceRoot": "projects/artisanjs/ngrx-action/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.json",
-            "project": "projects/craftsjs/ngrx-action/ng-package.json"
+            "tsConfig": "projects/artisanjs/ngrx-action/tsconfig.lib.json",
+            "project": "projects/artisanjs/ngrx-action/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/ngrx-action/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/ngrx-action/src/test.ts",
-            "tsConfig": "projects/craftsjs/ngrx-action/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/ngrx-action/karma.conf.js"
+            "main": "projects/artisanjs/ngrx-action/src/test.ts",
+            "tsConfig": "projects/artisanjs/ngrx-action/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/ngrx-action/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/perfect-scrollbar": {
+    "@artisanjs/perfect-scrollbar": {
       "projectType": "library",
-      "root": "projects/craftsjs/perfect-scrollbar",
-      "sourceRoot": "projects/craftsjs/perfect-scrollbar/src",
+      "root": "projects/artisanjs/perfect-scrollbar",
+      "sourceRoot": "projects/artisanjs/perfect-scrollbar/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.json",
-            "project": "projects/craftsjs/perfect-scrollbar/ng-package.json"
+            "tsConfig": "projects/artisanjs/perfect-scrollbar/tsconfig.lib.json",
+            "project": "projects/artisanjs/perfect-scrollbar/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/perfect-scrollbar/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/perfect-scrollbar/src/test.ts",
-            "tsConfig": "projects/craftsjs/perfect-scrollbar/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/perfect-scrollbar/karma.conf.js"
+            "main": "projects/artisanjs/perfect-scrollbar/src/test.ts",
+            "tsConfig": "projects/artisanjs/perfect-scrollbar/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/perfect-scrollbar/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/core": {
+    "@artisanjs/core": {
       "projectType": "library",
-      "root": "projects/craftsjs/core",
-      "sourceRoot": "projects/craftsjs/core/src",
+      "root": "projects/artisanjs/core",
+      "sourceRoot": "projects/artisanjs/core/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/core/tsconfig.lib.json",
-            "project": "projects/craftsjs/core/ng-package.json"
+            "tsConfig": "projects/artisanjs/core/tsconfig.lib.json",
+            "project": "projects/artisanjs/core/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/core/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/core/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/core/src/test.ts",
-            "tsConfig": "projects/craftsjs/core/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/core/karma.conf.js"
+            "main": "projects/artisanjs/core/src/test.ts",
+            "tsConfig": "projects/artisanjs/core/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/core/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/card": {
+    "@artisanjs/card": {
       "projectType": "library",
-      "root": "projects/craftsjs/card",
-      "sourceRoot": "projects/craftsjs/card/src",
+      "root": "projects/artisanjs/card",
+      "sourceRoot": "projects/artisanjs/card/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/card/tsconfig.lib.json",
-            "project": "projects/craftsjs/card/ng-package.json"
+            "tsConfig": "projects/artisanjs/card/tsconfig.lib.json",
+            "project": "projects/artisanjs/card/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/card/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/card/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/card/src/test.ts",
-            "tsConfig": "projects/craftsjs/card/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/card/karma.conf.js"
+            "main": "projects/artisanjs/card/src/test.ts",
+            "tsConfig": "projects/artisanjs/card/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/card/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/alert": {
+    "@artisanjs/alert": {
       "projectType": "library",
-      "root": "projects/craftsjs/alert",
-      "sourceRoot": "projects/craftsjs/alert/src",
+      "root": "projects/artisanjs/alert",
+      "sourceRoot": "projects/artisanjs/alert/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/alert/tsconfig.lib.json",
-            "project": "projects/craftsjs/alert/ng-package.json"
+            "tsConfig": "projects/artisanjs/alert/tsconfig.lib.json",
+            "project": "projects/artisanjs/alert/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/alert/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/alert/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/alert/src/test.ts",
-            "tsConfig": "projects/craftsjs/alert/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/alert/karma.conf.js"
+            "main": "projects/artisanjs/alert/src/test.ts",
+            "tsConfig": "projects/artisanjs/alert/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/alert/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/menu-admin": {
+    "@artisanjs/menu-admin": {
       "projectType": "library",
-      "root": "projects/craftsjs/menu-admin",
-      "sourceRoot": "projects/craftsjs/menu-admin/src",
+      "root": "projects/artisanjs/menu-admin",
+      "sourceRoot": "projects/artisanjs/menu-admin/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/menu-admin/tsconfig.lib.json",
-            "project": "projects/craftsjs/menu-admin/ng-package.json"
+            "tsConfig": "projects/artisanjs/menu-admin/tsconfig.lib.json",
+            "project": "projects/artisanjs/menu-admin/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/menu-admin/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/menu-admin/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/menu-admin/src/test.ts",
-            "tsConfig": "projects/craftsjs/menu-admin/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/menu-admin/karma.conf.js"
+            "main": "projects/artisanjs/menu-admin/src/test.ts",
+            "tsConfig": "projects/artisanjs/menu-admin/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/menu-admin/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/modal": {
+    "@artisanjs/modal": {
       "projectType": "library",
-      "root": "projects/craftsjs/modal",
-      "sourceRoot": "projects/craftsjs/modal/src",
+      "root": "projects/artisanjs/modal",
+      "sourceRoot": "projects/artisanjs/modal/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/modal/tsconfig.lib.json",
-            "project": "projects/craftsjs/modal/ng-package.json"
+            "tsConfig": "projects/artisanjs/modal/tsconfig.lib.json",
+            "project": "projects/artisanjs/modal/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/modal/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/modal/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/modal/src/test.ts",
-            "tsConfig": "projects/craftsjs/modal/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/modal/karma.conf.js"
+            "main": "projects/artisanjs/modal/src/test.ts",
+            "tsConfig": "projects/artisanjs/modal/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/modal/karma.conf.js"
           }
         }
       }
     },
-    "@craftsjs/notifier": {
+    "@artisanjs/notifier": {
       "projectType": "library",
-      "root": "projects/craftsjs/notifier",
-      "sourceRoot": "projects/craftsjs/notifier/src",
+      "root": "projects/artisanjs/notifier",
+      "sourceRoot": "projects/artisanjs/notifier/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/craftsjs/notifier/tsconfig.lib.json",
-            "project": "projects/craftsjs/notifier/ng-package.json"
+            "tsConfig": "projects/artisanjs/notifier/tsconfig.lib.json",
+            "project": "projects/artisanjs/notifier/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/craftsjs/notifier/tsconfig.lib.prod.json"
+              "tsConfig": "projects/artisanjs/notifier/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/craftsjs/notifier/src/test.ts",
-            "tsConfig": "projects/craftsjs/notifier/tsconfig.spec.json",
-            "karmaConfig": "projects/craftsjs/notifier/karma.conf.js"
+            "main": "projects/artisanjs/notifier/src/test.ts",
+            "tsConfig": "projects/artisanjs/notifier/tsconfig.spec.json",
+            "karmaConfig": "projects/artisanjs/notifier/karma.conf.js"
           }
         }
       }
@@ -231,5 +231,5 @@
   "cli": {
     "analytics": false
   },
-  "defaultProject": "@craftsjs/card"
+  "defaultProject": "@artisanjs/card"
 }

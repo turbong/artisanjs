@@ -1,0 +1,31 @@
+{
+  "name": "@artisanjs/perfect-scrollbar",
+  "version": "1.0.0",
+  "author": "Addapptables",
+  "description": "Perfect scrollbar library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/addapptables/alert-ui",
+  "peerDependencies": {
+    "@angular/core": ">= 14.0.0 < 15.0.0",
+    "rxjs": ">= 6.0.0 < 7.0.0",
+    "perfect-scrollbar": ">= 1.0.0 < 2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addapptables/perfect-scrollbar-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addapptables/perfect-scrollbar-ui/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "perfect scrollbar",
+    "artisanjs perfect-scrollbar",
+    "artisanjs"
+  ]
+,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

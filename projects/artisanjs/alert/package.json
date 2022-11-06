@@ -1,0 +1,35 @@
+{
+  "name": "@artisanjs/alert",
+  "version": "1.0.0",
+  "author": "artisanjs",
+  "description": "Material alert library for angular",
+  "license": "MIT",
+  "homepage": "https://github.com/turbong/artisanjs",
+  "peerDependencies": {
+    "@angular/common": ">= 14.0.0 < 15.0.0",
+    "@angular/core": ">= 14.0.0 < 15.0.0",
+    "@angular/material": ">= 14.0.0 < 15.0.0",
+    "@angular/cdk": ">= 14.0.0 < 15.0.0",
+    "@angular/animations": ">= 14.0.0 < 15.0.0",
+    "@ngx-translate/core": ">= 14.0.0 < 17.0.0",
+    "@artisanjs/core": ">= 1.0.0 < 2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turbong/artisanjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turbong/artisanjs/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "alert",
+    "material",
+    "artisanjs-alert-ui"
+  ]
+,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+<ng-template artisanjsDynamic name="alert-icon"></ng-template>
+<div *ngIf="data?.title" class="alert-title">
+    <span>
+        {{data.title | translate}}
+    </span>
+</div>
+<div *ngIf="data?.text" class="alert-text">
+    <span>
+        {{data.text | translate}}
+    </span>
+</div>
+<ng-template artisanjsDynamic name="alert-body"></ng-template>
+<div class="alert-footer" *ngIf="!data?.hiddenButtons">
+    <artisanjs-alert-ok-button *ngIf="!data?.customButtonComponent" (click)="buttonClick('ok')">
+    </artisanjs-alert-ok-button>
+    <artisanjs-alert-cancel-button *ngIf="!data?.customButtonComponent && data?.showCancelButton"
+        (click)="buttonClick('cancel')"></artisanjs-alert-cancel-button>
+</div>
+<ng-template artisanjsDynamic name="alert-buttons"></ng-template>

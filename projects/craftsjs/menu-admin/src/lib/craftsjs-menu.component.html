@@ -1,9 +1,0 @@
-<div (click)="$event.stopPropagation()"
-  [ngClass]="{'menu-open': open$ | async, 'menu-mini': activeMenuMini$ | async, 'menu-hover': collapseMenu$ | async }"
-  class="menu d-flex flex-column flex-wrap align-content-start">
-  <ng-content select="craftsjs-menu-header"></ng-content>
-  <div perfectScrollbar class="menu-scroll-container d-flex flex-column flex-wrap align-content-start">
-    <ng-content select="craftsjs-menu-user"></ng-content>
-    <ng-content select="craftsjs-menu-items-link"></ng-content>
-  </div>
-</div>

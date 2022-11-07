@@ -1,6 +1,6 @@
 {
   "name": "@artisanjs/core",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "author": "artisanjs",
   "description": "artisanjs core library for angular",
   "license": "MIT",
@@ -19,8 +19,7 @@
   "keywords": [
     "artisanjs",
     "core"
-  ]
-,
+  ],
   "dependencies": {
     "tslib": "^2.4.1"
   }

@@ -1,16 +1,16 @@
 {
   "name": "@artisanjs/modal",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "author": "artisanjs",
   "description": "Material modal is a library for angular",
   "license": "MIT",
   "homepage": "https://github.com/turbong/artisanjs",
   "peerDependencies": {
+    "@angular/animations": ">= 14.0.0 < 15.0.0",
+    "@angular/cdk": ">= 14.0.0 < 15.0.0",
     "@angular/common": ">= 14.0.0 < 15.0.0",
     "@angular/core": ">= 14.0.0 < 15.0.0",
-    "@angular/material": ">= 14.0.0 < 15.0.0",
-    "@angular/animations": ">= 14.0.0 < 15.0.0",
-    "@angular/cdk": ">= 14.0.0 < 15.0.0"
+    "@angular/material": ">= 14.0.0 < 15.0.0"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,7 @@
     "angular material modal",
     "artisanjs modal",
     "artisanjs"
-  ]
-,
+  ],
   "dependencies": {
     "tslib": "^2.0.0"
   }

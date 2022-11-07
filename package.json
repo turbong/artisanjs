@@ -1,10 +1,13 @@
 {
   "name": "miscellaneous",
   "version": "1.0.0",
-  "author": "artisanjs",
+  "author": "turbong",
   "description": "Material alert library for angular",
   "license": "MIT",
   "homepage": "https://github.com/turbong/artisanjs",
+  "workspaces": [
+    "projects/artisanjs/*"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -57,6 +60,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "lerna": "^6.0.1",
     "ng-packagr": "^14.2.2",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",

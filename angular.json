@@ -230,6 +230,5 @@
   },
   "cli": {
     "analytics": false
-  },
-  "defaultProject": "@artisanjs/card"
+  }  
 }

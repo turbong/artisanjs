@@ -7,7 +7,8 @@
   "homepage": "https://github.com/turbong/artisanjs",
   "peerDependencies": {
     "@angular/common": ">= 14.0.0 < 15.0.0",
-    "@angular/core": ">= 14.0.0 < 15.0.0"
+    "@angular/core": ">= 14.0.0 < 15.0.0",
+    "@artisanjs/ngrx-action": ">= 1.0.0 < 2.0.0"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "core"
   ],
   "dependencies": {
-    "tslib": "^2.4.1"
-  }
+    "tslib": "^2.3.0"
+  },
+  "gitHead": "33a13f381b6fdb391d79cef3f97c14c0b32689f7"
 }

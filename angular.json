@@ -10,7 +10,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/ngrx-action/tsconfig.lib.json",
             "project": "projects/artisanjs/ngrx-action/ng-package.json"
@@ -38,7 +38,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/perfect-scrollbar/tsconfig.lib.json",
             "project": "projects/artisanjs/perfect-scrollbar/ng-package.json"
@@ -66,7 +66,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/core/tsconfig.lib.json",
             "project": "projects/artisanjs/core/ng-package.json"
@@ -94,7 +94,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/card/tsconfig.lib.json",
             "project": "projects/artisanjs/card/ng-package.json"
@@ -122,7 +122,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/alert/tsconfig.lib.json",
             "project": "projects/artisanjs/alert/ng-package.json"
@@ -150,7 +150,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/menu-admin/tsconfig.lib.json",
             "project": "projects/artisanjs/menu-admin/ng-package.json"
@@ -178,7 +178,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/modal/tsconfig.lib.json",
             "project": "projects/artisanjs/modal/ng-package.json"
@@ -206,7 +206,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/artisanjs/notifier/tsconfig.lib.json",
             "project": "projects/artisanjs/notifier/ng-package.json"
